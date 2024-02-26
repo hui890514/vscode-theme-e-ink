@@ -1,0 +1,38 @@
+{
+  "publisher": "hui890514",
+  "name": "vscode-theme-e-ink",
+  "displayName": "E-Ink Theme",
+  "description": "A VSCode theme designed specifically for E-Ink displays.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hui890514/vscode-theme-e-ink"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "E-Ink",
+        "uiTheme": "hc-light",
+        "path": "./themes/e-ink.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "bumpp": "^9.2.0",
+    "esno": "^0.17.0"
+  },
+  "scripts": {
+    "dev": "esno watch src/index.ts",
+    "build": "esno src/index.ts",
+    "release": "bumpp --all && vsce publish"
+  }
+}
