@@ -6,7 +6,7 @@ This is a VSCode theme designed specifically for E-Ink displays.
 
 ![screenshot](./screenshot.png)
 
-> The color gray may look too light in a normal display, but believe me, try it and you will find it plays well in an E-Ink display, at least it does well in my DASUNG 13.3-inch display with Text Mode and Fast+++.
+I test it on my DASUNG 13.3-inch display with Text Mode and Fast+++.
 
 ## Thanks
 
