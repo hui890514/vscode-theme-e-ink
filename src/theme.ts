@@ -7,6 +7,8 @@ export default function getTheme() {
     base: 'hc-light',
     $schema: 'vscode://schemas/color-theme',
     colors: {
+      // https://code.visualstudio.com/api/references/theme-color
+
       // Contrast colors
       contrastActiveBorder: theme.border,
       contrastBorder: theme.border,
@@ -270,7 +272,7 @@ export default function getTheme() {
       // 'editorInlayHint.parameterForeground': themes.primary,
       // 'editorInlayHint.parameterBackground': themes.primary,
       'editorRuler.foreground': theme.foreground,
-      'editor.linkedEditingBackground': theme.background3,
+      'editor.linkedEditingBackground': theme.background2,
       'editorCodeLens.foreground': theme.foreground,
       'editorLightBulb.foreground': theme.foreground,
       'editorLightBulbAutoFix.foreground': theme.foreground,
