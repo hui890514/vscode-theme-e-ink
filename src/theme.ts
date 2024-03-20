@@ -10,16 +10,16 @@ export default function getTheme() {
       // https://code.visualstudio.com/api/references/theme-color
 
       // Contrast colors
-      contrastActiveBorder: theme.border,
-      contrastBorder: theme.border,
+      'contrastActiveBorder': theme.border,
+      'contrastBorder': theme.border,
 
       // Base colors
-      focusBorder: theme.border,
-      foreground: theme.foreground,
+      'focusBorder': theme.border,
+      'foreground': theme.foreground,
       'widget.border': theme.border,
       'widget.shadow': theme.shadow,
       'selection.background': theme.background2,
-      descriptionForeground: theme.foreground,
+      'descriptionForeground': theme.foreground,
       // errorForeground: theme.error,
       'icon.foreground': theme.foreground,
       'sash.hoverBorder': theme.border,
@@ -824,11 +824,11 @@ export default function getTheme() {
       // 'commentsView.unresolvedIcon': theme.primary,
 
       // Action Bar colors
-      'actionBar.toggledBackground': theme.background2
+      'actionBar.toggledBackground': theme.background2,
 
       // Simple Find Widget
       // 'simpleFindWidget.sashBorder':theme.primary,
     },
-    tokenColors
+    tokenColors,
   }
 }
