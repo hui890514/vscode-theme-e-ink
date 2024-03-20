@@ -2,20 +2,21 @@
   "publisher": "hui890514",
   "name": "vscode-theme-e-ink",
   "displayName": "E-Ink Theme",
+  "type": "module",
+  "version": "0.0.3",
   "description": "A VSCode theme designed specifically for E-Ink displays.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/hui890514/vscode-theme-e-ink"
-  },
-  "license": "MIT",
-  "version": "0.0.3",
-  "engines": {
-    "vscode": "^1.83.0"
   },
   "categories": [
     "Themes"
   ],
   "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
   "contributes": {
     "themes": [
       {
@@ -25,14 +26,27 @@
       }
     ]
   },
-  "devDependencies": {
-    "@types/node": "^20.8.9",
-    "bumpp": "^9.2.0",
-    "esno": "^0.17.0"
-  },
   "scripts": {
     "dev": "esno watch src/index.ts",
     "build": "esno src/index.ts",
-    "release": "bumpp --all && vsce publish"
+    "release": "bumpp --all && vsce publish",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.8.3",
+    "@types/node": "^20.8.9",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.0",
+    "esno": "^0.17.0",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.11.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
