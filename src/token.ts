@@ -1,101 +1,115 @@
-import { tokens } from './color'
+import { token } from './color'
 
-const basic = {
+interface TokenObject {
+  [index: string]: string
+}
+
+const basic: TokenObject = {
   // https://macromates.com/manual/en/language_grammars
-  'comment': tokens.gray2,
-  'comment.line': tokens.gray2,
-  'comment.line.double-slash': tokens.gray2,
-  'comment.line.double-dash': tokens.gray2,
-  'comment.line.number-sign': tokens.gray2,
-  'comment.line.percentage': tokens.gray2,
-  'comment.line.character': tokens.gray2,
-  'comment.block': tokens.gray2,
-  'comment.block.documentation': tokens.gray2,
+  'comment': token.lightGray,
+  'comment.line': token.lightGray,
+  'comment.line.double-slash': token.lightGray,
+  'comment.line.double-dash': token.lightGray,
+  'comment.line.number-sign': token.lightGray,
+  'comment.line.percentage': token.lightGray,
+  'comment.line.character': token.lightGray,
+  'comment.block': token.lightGray,
+  'comment.block.documentation': token.lightGray,
 
-  'constant': tokens.gray,
-  'constant.numeric': tokens.gray,
-  'constant.character': tokens.gray,
-  'constant.character.escape': tokens.gray,
-  'constant.language': tokens.grayItalic,
-  'constant.other': tokens.gray,
+  'constant': token.darkGray,
+  'constant.numeric': token.darkGray,
+  'constant.character': token.darkGray,
+  'constant.character.escape': token.darkGray,
+  'constant.language': token.darkGrayItalic,
+  'constant.other': token.darkGray,
 
-  'entity': tokens.bold,
-  'entity.name': tokens.bold,
-  'entity.name.function': tokens.bold,
-  'entity.name.type': tokens.bold,
-  'entity.name.tag': tokens.bold,
-  'entity.name.section': tokens.bold,
-  'entity.other': tokens.bold,
-  'entity.other.inherited-class': tokens.bold,
-  'entity.other.attribute-name': tokens.bold,
+  'entity': token.bold,
+  'entity.name': token.bold,
+  'entity.name.function': token.bold,
+  'entity.name.type': token.bold,
+  'entity.name.tag': token.bold,
+  'entity.name.section': token.bold,
+  'entity.other': token.bold,
+  'entity.other.inherited-class': token.bold,
+  'entity.other.attribute-name': token.bold,
 
-  'invalid': tokens.gray2,
-  'invalid.illegal': tokens.gray2,
-  'invalid.deprecated': tokens.gray2,
+  'invalid': token.lightGray,
+  'invalid.illegal': token.lightGray,
+  'invalid.deprecated': token.lightGray,
 
-  'keyword': tokens.italic,
-  'keyword.control': tokens.italic,
-  'keyword.operator': tokens.italic,
-  'keyword.other': tokens.italic,
+  'keyword': token.italic,
+  'keyword.control': token.italic,
+  'keyword.operator': token.italic,
+  'keyword.other': token.italic,
 
-  'markup': tokens.default,
-  'markup.underline': tokens.gray,
-  'markup.underline.link': tokens.gray,
-  'markup.bold': tokens.bold,
-  'markup.heading': tokens.gray,
-  'markup.italic': tokens.italic,
-  'markup.list': tokens.gray,
-  'markup.list.numbered': tokens.gray,
-  'markup.list.unnumbered': tokens.gray,
-  'markup.quote': tokens.gray,
-  'markup.raw': tokens.gray,
-  'markup.other': tokens.default,
+  'markup': token.default,
+  'markup.underline': token.darkGray,
+  'markup.underline.link': token.darkGray,
+  'markup.bold': token.bold,
+  'markup.heading': token.darkGray,
+  'markup.italic': token.italic,
+  'markup.list': token.darkGray,
+  'markup.list.numbered': token.darkGray,
+  'markup.list.unnumbered': token.darkGray,
+  'markup.quote': token.darkGray,
+  'markup.raw': token.darkGray,
+  'markup.other': token.default,
 
-  'meta': tokens.default,
+  'meta': token.default,
 
-  'storage': tokens.italic,
-  'storage.type': tokens.italic,
-  'storage.modifier': tokens.italic,
+  'storage': token.italic,
+  'storage.type': token.italic,
+  'storage.modifier': token.italic,
 
-  'string': tokens.gray,
-  'string.quoted': tokens.gray,
-  'string.quoted.single': tokens.gray,
-  'string.quoted.double': tokens.gray,
-  'string.quoted.triple': tokens.gray,
-  'string.quoted.other': tokens.gray,
-  'string.unquoted': tokens.gray,
-  'string.interpolated': tokens.gray,
-  'string.regexp': tokens.gray,
-  'string.other': tokens.gray,
+  'string': token.darkGray,
+  'string.quoted': token.darkGray,
+  'string.quoted.single': token.darkGray,
+  'string.quoted.double': token.darkGray,
+  'string.quoted.triple': token.darkGray,
+  'string.quoted.other': token.darkGray,
+  'string.unquoted': token.darkGray,
+  'string.interpolated': token.darkGray,
+  'string.regexp': token.darkGray,
+  'string.other': token.darkGray,
 
-  'support': tokens.italic,
-  'support.function': tokens.italic,
-  'support.class': tokens.italic,
-  'support.type': tokens.italic,
-  'support.constant': tokens.italic,
-  'support.variable': tokens.italic,
-  'support.other': tokens.italic,
+  'support': token.italic,
+  'support.function': token.italic,
+  'support.class': token.italic,
+  'support.type': token.italic,
+  'support.constant': token.italic,
+  'support.variable': token.italic,
+  'support.other': token.italic,
 
-  'variable': tokens.default,
-  'variable.parameter': tokens.default,
-  'variable.language': tokens.italic,
-  'variable.other': tokens.default,
-}
-const JSON = {
-  'support.type.property-name.json': tokens.default,
-}
-const YAML = {
-  'entity.name.tag.yaml': tokens.default,
+  'variable': token.default,
+  'variable.parameter': token.default,
+  'variable.language': token.italic,
+  'variable.other': token.default,
 }
 
+const JSON: TokenObject = {
+  'support.type.property-name.json': token.default,
+}
+
+const YAML: TokenObject = {
+  'entity.name.tag.yaml': token.default,
+}
+
+// format
+function formatColor(a: string) {
+  const b = a.split(' ')
+  return {
+    foreground: b[0],
+    fontStyle: b[1] || '',
+  }
+}
+
+const _tokenColors: { [index: string]: string[] } = {}
 const rules = { ...basic, ...JSON, ...YAML }
-const _tokenColors = {}
-for (const rule of Object.keys(rules)) {
-  if (!_tokenColors[rules[rule]])
-    _tokenColors[rules[rule]] = [rule]
-  else _tokenColors[rules[rule]].push(rule)
-}
-export const tokenColors = Object.keys(_tokenColors).map(key => ({
+for (const rule of Object.keys(rules))
+  (_tokenColors[rules[rule]] ??= []).push(rule)
+const tokenColors = Object.keys(_tokenColors).map(key => ({
   scope: _tokenColors[key],
-  settings: tokens.format(key),
+  settings: formatColor(key),
 }))
+
+export { tokenColors }
