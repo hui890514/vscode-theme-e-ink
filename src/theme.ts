@@ -230,7 +230,7 @@ export default function getTheme() {
       // 'editor.wordHighlightStrongBorder': theme.border,
       // 'editor.wordHighlightTextBackground': theme.background,
       // 'editor.wordHighlightTextBorder': theme.border,
-      'editor.findMatchBackground': theme.background2,
+      // 'editor.findMatchBackground': theme.background2,
       // 'editor.findMatchHighlightBackground': theme.background,
       'editor.findRangeHighlightBackground': theme.background,
       'editor.findMatchBorder': theme.border,
