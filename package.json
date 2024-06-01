@@ -29,7 +29,7 @@
   "scripts": {
     "dev": "esno watch src/index.ts",
     "build": "esno src/index.ts",
-    "release": "bumpp --all && vsce publish",
+    "release": "bumpp --all && vsce publish --no-dependencies",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
