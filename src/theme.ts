@@ -718,10 +718,10 @@ export default function getTheme() {
       // 'breadcrumbPicker.background': theme.primary,
 
       // Snippets colors
-      // 'editor.snippetTabstopHighlightBackground': theme.primary,
-      // 'editor.snippetTabstopHighlightBorder': theme.primary,
-      // 'editor.snippetFinalTabstopHighlightBackground': theme.primary,
-      // 'editor.snippetFinalTabstopHighlightBorder': theme.primary,
+      'editor.snippetTabstopHighlightBackground': theme.background,
+      'editor.snippetTabstopHighlightBorder': theme.border,
+      'editor.snippetFinalTabstopHighlightBackground': theme.background,
+      'editor.snippetFinalTabstopHighlightBorder': theme.border,
 
       // Symbol Icons colors
       // 'symbolIcon.arrayForeground': theme.primary,
