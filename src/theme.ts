@@ -357,7 +357,7 @@ export default function getTheme() {
       // 'diffEditorOverview.removedForeground':theme.primary,
       'diffEditor.unchangedRegionBackground': theme.background2,
       'diffEditor.unchangedRegionForeground': theme.foreground,
-      'diffEditor.unchangedCodeBackground': theme.background,
+      // 'diffEditor.unchangedCodeBackground': theme.background,
       // 'diffEditor.move.border': theme.background2,
       // 'diffEditor.moveActive.border':theme.primary,
       // 'multiDiffEditor.headerBackground': theme.background2,
