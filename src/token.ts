@@ -16,12 +16,12 @@ const basic: TokenObject = {
   'comment.block': token.lightGray,
   'comment.block.documentation': token.lightGray,
 
-  'constant': token.darkGray,
-  'constant.numeric': token.darkGray,
-  'constant.character': token.darkGray,
-  'constant.character.escape': token.darkGray,
-  'constant.language': token.darkGrayItalic,
-  'constant.other': token.darkGray,
+  'constant': token.darkGrayBold,
+  'constant.numeric': token.darkGrayBold,
+  'constant.character': token.darkGrayBold,
+  'constant.character.escape': token.darkGrayBold,
+  'constant.language': token.darkGrayItalicBold,
+  'constant.other': token.darkGrayBold,
 
   'entity': token.bold,
   'entity.name': token.bold,
@@ -43,16 +43,16 @@ const basic: TokenObject = {
   'keyword.other': token.italic,
 
   'markup': token.default,
-  'markup.underline': token.darkGray,
-  'markup.underline.link': token.darkGray,
+  'markup.underline': token.darkGrayBold,
+  'markup.underline.link': token.darkGrayBold,
   'markup.bold': token.bold,
-  'markup.heading': token.darkGray,
+  'markup.heading': token.darkGrayBold,
   'markup.italic': token.italic,
-  'markup.list': token.darkGray,
-  'markup.list.numbered': token.darkGray,
-  'markup.list.unnumbered': token.darkGray,
-  'markup.quote': token.darkGray,
-  'markup.raw': token.darkGray,
+  'markup.list': token.darkGrayBold,
+  'markup.list.numbered': token.darkGrayBold,
+  'markup.list.unnumbered': token.darkGrayBold,
+  'markup.quote': token.darkGrayBold,
+  'markup.raw': token.darkGrayBold,
   'markup.other': token.default,
 
   'meta': token.default,
@@ -61,16 +61,16 @@ const basic: TokenObject = {
   'storage.type': token.italic,
   'storage.modifier': token.italic,
 
-  'string': token.darkGray,
-  'string.quoted': token.darkGray,
-  'string.quoted.single': token.darkGray,
-  'string.quoted.double': token.darkGray,
-  'string.quoted.triple': token.darkGray,
-  'string.quoted.other': token.darkGray,
-  'string.unquoted': token.darkGray,
-  'string.interpolated': token.darkGray,
-  'string.regexp': token.darkGray,
-  'string.other': token.darkGray,
+  'string': token.darkGrayBold,
+  'string.quoted': token.darkGrayBold,
+  'string.quoted.single': token.darkGrayBold,
+  'string.quoted.double': token.darkGrayBold,
+  'string.quoted.triple': token.darkGrayBold,
+  'string.quoted.other': token.darkGrayBold,
+  'string.unquoted': token.darkGrayBold,
+  'string.interpolated': token.darkGrayBold,
+  'string.regexp': token.darkGrayBold,
+  'string.other': token.darkGrayBold,
 
   'support': token.italic,
   'support.function': token.italic,
@@ -98,8 +98,8 @@ const YAML: TokenObject = {
 function formatColor(a: string) {
   const b = a.split(' ')
   return {
-    foreground: b[0],
-    fontStyle: b[1] || '',
+    foreground: b.shift(),
+    fontStyle: b.join(' ') || '',
   }
 }
 

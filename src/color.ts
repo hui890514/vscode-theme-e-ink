@@ -29,9 +29,11 @@ const token = <const>{
   default: color.black,
   bold: `${color.black} bold`,
   italic: `${color.black} italic`,
-  darkGrayItalic: `${color.darkGray} italic`,
-  darkGray: color.darkGray,
+  darkGrayItalicBold: `${color.darkGray} italic bold`,
+  darkGrayBold: `${color.darkGray} bold`,
+  // darkGray: color.darkGray,
   lightGray: color.lightGray,
+  // lightGrayBold: `${color.lightGray} bold`,
 }
 
 export { theme, token }

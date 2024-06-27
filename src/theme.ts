@@ -220,7 +220,7 @@ export default function getTheme() {
       'editorCursor.background': theme.background,
       'editorCursor.foreground': theme.foreground,
       'editor.selectionBackground': theme.background2,
-      'editor.selectionForeground': theme.foreground3,
+      'editor.selectionForeground': theme.foreground,
       'editor.inactiveSelectionBackground': theme.background2,
       // 'editor.selectionHighlightBackground': theme.background2,
       // 'editor.selectionHighlightBorder': theme.border,
