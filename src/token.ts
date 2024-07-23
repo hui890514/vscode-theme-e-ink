@@ -1,88 +1,88 @@
 import { token } from './color'
 
 interface TokenObject {
-  [index: string]: string
+  [index: string]: readonly string[]
 }
 
 const basic: TokenObject = {
   // https://macromates.com/manual/en/language_grammars
-  'comment': token.lightGray,
-  'comment.line': token.lightGray,
-  'comment.line.double-slash': token.lightGray,
-  'comment.line.double-dash': token.lightGray,
-  'comment.line.number-sign': token.lightGray,
-  'comment.line.percentage': token.lightGray,
-  'comment.line.character': token.lightGray,
-  'comment.block': token.lightGray,
-  'comment.block.documentation': token.lightGray,
+  'comment': token.comment,
+  'comment.line': token.comment,
+  'comment.line.double-slash': token.comment,
+  'comment.line.double-dash': token.comment,
+  'comment.line.number-sign': token.comment,
+  'comment.line.percentage': token.comment,
+  'comment.line.character': token.comment,
+  'comment.block': token.comment,
+  'comment.block.documentation': token.comment,
 
-  'constant': token.darkGrayBold,
-  'constant.numeric': token.darkGrayBold,
-  'constant.character': token.darkGrayBold,
-  'constant.character.escape': token.darkGrayBold,
-  'constant.language': token.darkGrayItalicBold,
-  'constant.other': token.darkGrayBold,
+  'constant': token.constant,
+  'constant.numeric': token.constant,
+  'constant.character': token.constant,
+  'constant.character.escape': token.constant,
+  'constant.language': token.constantLanguage,
+  'constant.other': token.constant,
 
-  'entity': token.bold,
-  'entity.name': token.bold,
-  'entity.name.function': token.bold,
-  'entity.name.type': token.bold,
-  'entity.name.tag': token.bold,
-  'entity.name.section': token.bold,
-  'entity.other': token.bold,
-  'entity.other.inherited-class': token.bold,
-  'entity.other.attribute-name': token.bold,
+  'entity': token.entity,
+  'entity.name': token.entity,
+  'entity.name.function': token.entity,
+  'entity.name.type': token.entity,
+  'entity.name.tag': token.entity,
+  'entity.name.section': token.entity,
+  'entity.other': token.entity,
+  'entity.other.inherited-class': token.entity,
+  'entity.other.attribute-name': token.entity,
 
-  'invalid': token.lightGray,
-  'invalid.illegal': token.lightGray,
-  'invalid.deprecated': token.lightGray,
+  'invalid': token.invalid,
+  'invalid.illegal': token.invalid,
+  'invalid.deprecated': token.invalid,
 
-  'keyword': token.italic,
-  'keyword.control': token.italic,
-  'keyword.operator': token.italic,
-  'keyword.other': token.italic,
+  'keyword': token.keyword,
+  'keyword.control': token.keyword,
+  'keyword.operator': token.keyword,
+  'keyword.other': token.keyword,
 
   'markup': token.default,
-  'markup.underline': token.darkGrayBold,
-  'markup.underline.link': token.darkGrayBold,
-  'markup.bold': token.bold,
-  'markup.heading': token.darkGrayBold,
-  'markup.italic': token.italic,
-  'markup.list': token.darkGrayBold,
-  'markup.list.numbered': token.darkGrayBold,
-  'markup.list.unnumbered': token.darkGrayBold,
-  'markup.quote': token.darkGrayBold,
-  'markup.raw': token.darkGrayBold,
+  'markup.underline': token.constant,
+  'markup.underline.link': token.constant,
+  'markup.bold': token.entity,
+  'markup.heading': token.constant,
+  'markup.italic': token.keyword,
+  'markup.list': token.constant,
+  'markup.list.numbered': token.constant,
+  'markup.list.unnumbered': token.constant,
+  'markup.quote': token.constant,
+  'markup.raw': token.constant,
   'markup.other': token.default,
 
-  'meta': token.default,
+  'meta': token.meta,
 
-  'storage': token.italic,
-  'storage.type': token.italic,
-  'storage.modifier': token.italic,
+  'storage': token.storage,
+  'storage.type': token.storage,
+  'storage.modifier': token.storage,
 
-  'string': token.darkGrayBold,
-  'string.quoted': token.darkGrayBold,
-  'string.quoted.single': token.darkGrayBold,
-  'string.quoted.double': token.darkGrayBold,
-  'string.quoted.triple': token.darkGrayBold,
-  'string.quoted.other': token.darkGrayBold,
-  'string.unquoted': token.darkGrayBold,
-  'string.interpolated': token.darkGrayBold,
-  'string.regexp': token.darkGrayBold,
-  'string.other': token.darkGrayBold,
+  'string': token.string,
+  'string.quoted': token.string,
+  'string.quoted.single': token.string,
+  'string.quoted.double': token.string,
+  'string.quoted.triple': token.string,
+  'string.quoted.other': token.string,
+  'string.unquoted': token.string,
+  'string.interpolated': token.string,
+  'string.regexp': token.string,
+  'string.other': token.string,
 
-  'support': token.italic,
-  'support.function': token.italic,
-  'support.class': token.italic,
-  'support.type': token.italic,
-  'support.constant': token.italic,
-  'support.variable': token.italic,
-  'support.other': token.italic,
+  'support': token.support,
+  'support.function': token.support,
+  'support.class': token.support,
+  'support.type': token.support,
+  'support.constant': token.support,
+  'support.variable': token.support,
+  'support.other': token.support,
 
   'variable': token.default,
   'variable.parameter': token.default,
-  'variable.language': token.italic,
+  'variable.language': token.keyword,
   'variable.other': token.default,
 }
 
@@ -94,7 +94,6 @@ const YAML: TokenObject = {
   'entity.name.tag.yaml': token.default,
 }
 
-// format
 function formatColor(a: string) {
   const b = a.split(' ')
   return {
@@ -103,13 +102,14 @@ function formatColor(a: string) {
   }
 }
 
-const _tokenColors: { [index: string]: string[] } = {}
-const rules = { ...basic, ...JSON, ...YAML }
-for (const rule of Object.keys(rules))
-  (_tokenColors[rules[rule]] ??= []).push(rule)
-const tokenColors = Object.keys(_tokenColors).map(key => ({
-  scope: _tokenColors[key],
-  settings: formatColor(key),
-}))
-
-export { tokenColors }
+export function getTokenColors(isColor = false) {
+  const _tokenColors: { [index: string]: string[] } = {}
+  const rules = { ...basic, ...JSON, ...YAML }
+  const i = isColor ? 1 : 0
+  for (const rule of Object.keys(rules))
+    (_tokenColors[rules[rule][i]] ??= []).push(rule)
+  return Object.keys(_tokenColors).map(key => ({
+    scope: _tokenColors[key],
+    settings: formatColor(key),
+  }))
+}

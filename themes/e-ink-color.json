@@ -1,5 +1,5 @@
 {
-  "name": "E-Ink",
+  "name": "E-Ink Color",
   "base": "hc-light",
   "$schema": "vscode://schemas/color-theme",
   "colors": {

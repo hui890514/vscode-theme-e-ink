@@ -23,6 +23,11 @@
         "label": "E-Ink",
         "uiTheme": "hc-light",
         "path": "./themes/e-ink.json"
+      },
+      {
+        "label": "E-Ink Color",
+        "uiTheme": "hc-light",
+        "path": "./themes/e-ink-color.json"
       }
     ]
   },
