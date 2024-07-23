@@ -1,8 +1,9 @@
 import { theme } from './color'
-import { getTokenColors } from './token'
+import { getTokenColors, getsemanticTokenColors } from './token'
 
 export default function getTheme(isColor = false) {
   const name = isColor ? 'E-Ink Color' : 'E-Ink'
+
   const i = isColor ? 1 : 0
   const background = theme.background[i]
   const background2 = theme.background2[i]
@@ -19,6 +20,7 @@ export default function getTheme(isColor = false) {
   const stroke = theme.stroke[i]
   const highlight = theme.highlight[i]
   const highlight2 = theme.highlight2[i]
+
   return {
     name,
     base: 'hc-light',
@@ -847,5 +849,6 @@ export default function getTheme(isColor = false) {
       // 'simpleFindWidget.sashBorder':background,
     },
     tokenColors: getTokenColors(isColor),
+    ...getsemanticTokenColors(isColor),
   }
 }

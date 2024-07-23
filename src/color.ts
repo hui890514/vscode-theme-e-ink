@@ -3,7 +3,7 @@ enum color {
   white = '#FFFFFF',
   lightGray = '#DDDDDD',
   darkGray = '#B4B4B3',
-  red = '#CB4B16',
+  red = '#B56959',
   blue = '#3f51b5',
   pink = '#AF00DB',
   orange = '#ff9800',
@@ -33,14 +33,25 @@ const token = <const>{
   default: [color.black, color.brown],
   meta: [color.black, color.brown],
   entity: [`${color.black} bold`, `${color.pink}`],
-  keyword: [`${color.black} italic`, `${color.orange}`],
-  support: [`${color.black} italic`, `${color.orange}`],
-  storage: [`${color.black} italic`, `${color.orange}`],
-  constantLanguage: [`${color.darkGray} italic bold`, `${color.blue}`],
-  constant: [`${color.darkGray} bold`, `${color.blue}`],
-  string: [`${color.darkGray} bold`, `${color.blue}`],
-  comment: [color.lightGray, color.green],
-  invalid: [color.lightGray, color.green],
+  keyword: [`${color.black} italic`, `${color.blue}`],
+  support: [`${color.black} italic`, `${color.blue}`],
+  storage: [`${color.black} italic`, `${color.blue}`],
+  constantLanguage: [`${color.darkGray} italic bold`, `${color.orange}`],
+  constant: [`${color.darkGray} bold`, `${color.orange}`],
+  string: [`${color.darkGray} bold`, `${color.orange}`],
+  comment: [color.lightGray, color.red],
+  invalid: [color.lightGray, color.red],
 }
 
-export { theme, token }
+const semanticTokenColors = <const>{
+  namespace: color.brown,
+  function: color.pink,
+  property: color.brown,
+  interface: color.green,
+  type: color.green,
+  typeParameter: color.brown,
+  class: color.brown,
+  enum: color.brown,
+}
+
+export { theme, token, semanticTokenColors }

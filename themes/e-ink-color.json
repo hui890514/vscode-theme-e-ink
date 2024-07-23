@@ -253,7 +253,7 @@
         "invalid.deprecated"
       ],
       "settings": {
-        "foreground": "#2AA198",
+        "foreground": "#B56959",
         "fontStyle": ""
       }
     },
@@ -285,7 +285,7 @@
         "string.other"
       ],
       "settings": {
-        "foreground": "#3f51b5",
+        "foreground": "#ff9800",
         "fontStyle": ""
       }
     },
@@ -327,7 +327,7 @@
         "variable.language"
       ],
       "settings": {
-        "foreground": "#ff9800",
+        "foreground": "#3f51b5",
         "fontStyle": ""
       }
     },
@@ -347,5 +347,16 @@
         "fontStyle": ""
       }
     }
-  ]
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "namespace": "#795548",
+    "function": "#AF00DB",
+    "property": "#795548",
+    "interface": "#2AA198",
+    "type": "#2AA198",
+    "typeParameter": "#795548",
+    "class": "#795548",
+    "enum": "#795548"
+  }
 }

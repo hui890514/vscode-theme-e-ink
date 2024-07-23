@@ -1,4 +1,4 @@
-import { token } from './color'
+import { semanticTokenColors, token } from './color'
 
 interface TokenObject {
   [index: string]: readonly string[]
@@ -112,4 +112,13 @@ export function getTokenColors(isColor = false) {
     scope: tokenColors[key],
     settings: formatColor(key),
   }))
+}
+
+export function getsemanticTokenColors(isColor = false) {
+  if (isColor) {
+    return {
+      semanticHighlighting: true,
+      semanticTokenColors,
+    }
+  }
 }
