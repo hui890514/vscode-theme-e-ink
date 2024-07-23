@@ -1,8 +1,14 @@
 enum color {
   black = '#000000',
-  white = '#ffffff',
-  lightGray = '#dddddd',
-  darkGray = '#b4b4b3',
+  white = '#FFFFFF',
+  lightGray = '#DDDDDD',
+  darkGray = '#B4B4B3',
+  red = '#CB4B16',
+  blue = '#3f51b5',
+  pink = '#AF00DB',
+  orange = '#ff9800',
+  green = '#2AA198',
+  brown = '#795548',
 }
 
 const theme = <const>{
@@ -24,17 +30,17 @@ const theme = <const>{
 }
 
 const token = <const>{
-  default: [color.black, color.black],
-  meta: [color.black, color.black],
-  entity: [`${color.black} bold`, `${color.black} bold`],
-  keyword: [`${color.black} italic`, `${color.black} italic`],
-  support: [`${color.black} italic`, `${color.black} italic`],
-  storage: [`${color.black} italic`, `${color.black} italic`],
-  constantLanguage: [`${color.darkGray} italic bold`, `${color.darkGray} italic bold`],
-  constant: [`${color.darkGray} bold`, `${color.darkGray} bold`],
-  string: [`${color.darkGray} bold`, `${color.darkGray} bold`],
-  comment: [color.lightGray, color.lightGray],
-  invalid: [color.lightGray, color.lightGray],
+  default: [color.black, color.brown],
+  meta: [color.black, color.brown],
+  entity: [`${color.black} bold`, `${color.pink}`],
+  keyword: [`${color.black} italic`, `${color.orange}`],
+  support: [`${color.black} italic`, `${color.orange}`],
+  storage: [`${color.black} italic`, `${color.orange}`],
+  constantLanguage: [`${color.darkGray} italic bold`, `${color.blue}`],
+  constant: [`${color.darkGray} bold`, `${color.blue}`],
+  string: [`${color.darkGray} bold`, `${color.blue}`],
+  comment: [color.lightGray, color.green],
+  invalid: [color.lightGray, color.green],
 }
 
 export { theme, token }

@@ -103,13 +103,13 @@ function formatColor(a: string) {
 }
 
 export function getTokenColors(isColor = false) {
-  const _tokenColors: { [index: string]: string[] } = {}
+  const tokenColors: { [index: string]: string[] } = {}
   const rules = { ...basic, ...JSON, ...YAML }
   const i = isColor ? 1 : 0
   for (const rule of Object.keys(rules))
-    (_tokenColors[rules[rule][i]] ??= []).push(rule)
-  return Object.keys(_tokenColors).map(key => ({
-    scope: _tokenColors[key],
+    (tokenColors[rules[rule][i]] ??= []).push(rule)
+  return Object.keys(tokenColors).map(key => ({
+    scope: tokenColors[key],
     settings: formatColor(key),
   }))
 }
