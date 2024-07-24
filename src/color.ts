@@ -32,6 +32,7 @@ export const theme = <const>{
 
 export const tokenColor = <const>{
   default: [color.black, color.brown],
+  variable: [color.black, color.brown],
   meta: [color.black, color.brown],
   entity: [`${color.black} bold`, `${color.pink}`],
   keyword: [`${color.black} italic`, `${color.blue}`],

@@ -80,10 +80,10 @@ const basic: TokenObject = {
   'support.variable': tokenColor.support,
   'support.other': tokenColor.support,
 
-  'variable': tokenColor.default,
-  'variable.parameter': tokenColor.default,
+  'variable': tokenColor.variable,
+  'variable.parameter': tokenColor.variable,
   'variable.language': tokenColor.keyword,
-  'variable.other': tokenColor.default,
+  'variable.other': tokenColor.variable,
 }
 
 const JSON: TokenObject = {
