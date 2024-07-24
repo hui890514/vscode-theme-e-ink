@@ -107,19 +107,19 @@ export function getTokenColors(isColor = false) {
 }
 
 export function getsemanticTokenColors(isColor = false) {
-  if (isColor) {
-    return {
-      semanticHighlighting: true,
-      semanticTokenColors: {
-        namespace: semanticTokenColor.namespace,
-        function: semanticTokenColor.function,
-        property: semanticTokenColor.property,
-        interface: semanticTokenColor.interface,
-        type: semanticTokenColor.type,
-        typeParameter: semanticTokenColor.typeParameter,
-        class: semanticTokenColor.class,
-        enum: semanticTokenColor.enum,
-      },
-    }
-  }
+  return isColor
+    ? {
+        semanticHighlighting: true,
+        semanticTokenColors: {
+          namespace: semanticTokenColor.namespace,
+          function: semanticTokenColor.function,
+          property: semanticTokenColor.property,
+          interface: semanticTokenColor.interface,
+          type: semanticTokenColor.type,
+          typeParameter: semanticTokenColor.typeParameter,
+          class: semanticTokenColor.class,
+          enum: semanticTokenColor.enum,
+        },
+      }
+    : { semanticHighlighting: false }
 }
