@@ -4,7 +4,7 @@
   "displayName": "E-Ink Theme",
   "type": "module",
   "version": "2.0.0",
-  "description": "A VSCode theme designed specifically for E-Ink displays.",
+  "description": "E-ink theme for VSCode",
   "license": "MIT",
   "repository": {
     "type": "git",
