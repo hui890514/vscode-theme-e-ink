@@ -11,7 +11,7 @@ enum color {
   brown = '#795548',
 }
 
-const theme = <const>{
+export const theme = <const>{
   background: [color.white, color.white],
   background2: [color.lightGray, color.lightGray],
   background3: [color.black, color.black],
@@ -29,7 +29,7 @@ const theme = <const>{
   highlight2: [color.darkGray, color.darkGray],
 }
 
-const token = <const>{
+export const tokenColor = <const>{
   default: [color.black, color.brown],
   meta: [color.black, color.brown],
   entity: [`${color.black} bold`, `${color.pink}`],
@@ -43,7 +43,7 @@ const token = <const>{
   invalid: [color.lightGray, color.red],
 }
 
-const semanticTokenColors = <const>{
+export const semanticTokenColor = <const>{
   namespace: color.brown,
   function: color.pink,
   property: color.brown,
@@ -54,4 +54,10 @@ const semanticTokenColors = <const>{
   enum: color.brown,
 }
 
-export { theme, token, semanticTokenColors }
+export function formatColor(a: string) {
+  const b = a.split(' ')
+  return {
+    foreground: b.shift(),
+    fontStyle: b.join(' ') || '',
+  }
+}

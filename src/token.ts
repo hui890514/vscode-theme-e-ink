@@ -1,105 +1,97 @@
-import { semanticTokenColors, token } from './color'
+import { formatColor, semanticTokenColor, tokenColor } from './color'
 
 interface TokenObject {
-  [index: string]: readonly string[]
+  [index: string]: readonly [string, string]
 }
 
 const basic: TokenObject = {
   // https://macromates.com/manual/en/language_grammars
-  'comment': token.comment,
-  'comment.line': token.comment,
-  'comment.line.double-slash': token.comment,
-  'comment.line.double-dash': token.comment,
-  'comment.line.number-sign': token.comment,
-  'comment.line.percentage': token.comment,
-  'comment.line.character': token.comment,
-  'comment.block': token.comment,
-  'comment.block.documentation': token.comment,
+  'comment': tokenColor.comment,
+  'comment.line': tokenColor.comment,
+  'comment.line.double-slash': tokenColor.comment,
+  'comment.line.double-dash': tokenColor.comment,
+  'comment.line.number-sign': tokenColor.comment,
+  'comment.line.percentage': tokenColor.comment,
+  'comment.line.character': tokenColor.comment,
+  'comment.block': tokenColor.comment,
+  'comment.block.documentation': tokenColor.comment,
 
-  'constant': token.constant,
-  'constant.numeric': token.constant,
-  'constant.character': token.constant,
-  'constant.character.escape': token.constant,
-  'constant.language': token.constantLanguage,
-  'constant.other': token.constant,
+  'constant': tokenColor.constant,
+  'constant.numeric': tokenColor.constant,
+  'constant.character': tokenColor.constant,
+  'constant.character.escape': tokenColor.constant,
+  'constant.language': tokenColor.constantLanguage,
+  'constant.other': tokenColor.constant,
 
-  'entity': token.entity,
-  'entity.name': token.entity,
-  'entity.name.function': token.entity,
-  'entity.name.type': token.entity,
-  'entity.name.tag': token.entity,
-  'entity.name.section': token.entity,
-  'entity.other': token.entity,
-  'entity.other.inherited-class': token.entity,
-  'entity.other.attribute-name': token.entity,
+  'entity': tokenColor.entity,
+  'entity.name': tokenColor.entity,
+  'entity.name.function': tokenColor.entity,
+  'entity.name.type': tokenColor.entity,
+  'entity.name.tag': tokenColor.entity,
+  'entity.name.section': tokenColor.entity,
+  'entity.other': tokenColor.entity,
+  'entity.other.inherited-class': tokenColor.entity,
+  'entity.other.attribute-name': tokenColor.entity,
 
-  'invalid': token.invalid,
-  'invalid.illegal': token.invalid,
-  'invalid.deprecated': token.invalid,
+  'invalid': tokenColor.invalid,
+  'invalid.illegal': tokenColor.invalid,
+  'invalid.deprecated': tokenColor.invalid,
 
-  'keyword': token.keyword,
-  'keyword.control': token.keyword,
-  'keyword.operator': token.keyword,
-  'keyword.other': token.keyword,
+  'keyword': tokenColor.keyword,
+  'keyword.control': tokenColor.keyword,
+  'keyword.operator': tokenColor.keyword,
+  'keyword.other': tokenColor.keyword,
 
-  'markup': token.default,
-  'markup.underline': token.constant,
-  'markup.underline.link': token.constant,
-  'markup.bold': token.entity,
-  'markup.heading': token.constant,
-  'markup.italic': token.keyword,
-  'markup.list': token.constant,
-  'markup.list.numbered': token.constant,
-  'markup.list.unnumbered': token.constant,
-  'markup.quote': token.constant,
-  'markup.raw': token.constant,
-  'markup.other': token.default,
+  'markup': tokenColor.default,
+  'markup.underline': tokenColor.constant,
+  'markup.underline.link': tokenColor.constant,
+  'markup.bold': tokenColor.entity,
+  'markup.heading': tokenColor.constant,
+  'markup.italic': tokenColor.keyword,
+  'markup.list': tokenColor.constant,
+  'markup.list.numbered': tokenColor.constant,
+  'markup.list.unnumbered': tokenColor.constant,
+  'markup.quote': tokenColor.constant,
+  'markup.raw': tokenColor.constant,
+  'markup.other': tokenColor.default,
 
-  'meta': token.meta,
+  'meta': tokenColor.meta,
 
-  'storage': token.storage,
-  'storage.type': token.storage,
-  'storage.modifier': token.storage,
+  'storage': tokenColor.storage,
+  'storage.type': tokenColor.storage,
+  'storage.modifier': tokenColor.storage,
 
-  'string': token.string,
-  'string.quoted': token.string,
-  'string.quoted.single': token.string,
-  'string.quoted.double': token.string,
-  'string.quoted.triple': token.string,
-  'string.quoted.other': token.string,
-  'string.unquoted': token.string,
-  'string.interpolated': token.string,
-  'string.regexp': token.string,
-  'string.other': token.string,
+  'string': tokenColor.string,
+  'string.quoted': tokenColor.string,
+  'string.quoted.single': tokenColor.string,
+  'string.quoted.double': tokenColor.string,
+  'string.quoted.triple': tokenColor.string,
+  'string.quoted.other': tokenColor.string,
+  'string.unquoted': tokenColor.string,
+  'string.interpolated': tokenColor.string,
+  'string.regexp': tokenColor.string,
+  'string.other': tokenColor.string,
 
-  'support': token.support,
-  'support.function': token.support,
-  'support.class': token.support,
-  'support.type': token.support,
-  'support.constant': token.support,
-  'support.variable': token.support,
-  'support.other': token.support,
+  'support': tokenColor.support,
+  'support.function': tokenColor.support,
+  'support.class': tokenColor.support,
+  'support.type': tokenColor.support,
+  'support.constant': tokenColor.support,
+  'support.variable': tokenColor.support,
+  'support.other': tokenColor.support,
 
-  'variable': token.default,
-  'variable.parameter': token.default,
-  'variable.language': token.keyword,
-  'variable.other': token.default,
+  'variable': tokenColor.default,
+  'variable.parameter': tokenColor.default,
+  'variable.language': tokenColor.keyword,
+  'variable.other': tokenColor.default,
 }
 
 const JSON: TokenObject = {
-  'support.type.property-name.json': token.default,
+  'support.type.property-name.json': tokenColor.default,
 }
 
 const YAML: TokenObject = {
-  'entity.name.tag.yaml': token.default,
-}
-
-function formatColor(a: string) {
-  const b = a.split(' ')
-  return {
-    foreground: b.shift(),
-    fontStyle: b.join(' ') || '',
-  }
+  'entity.name.tag.yaml': tokenColor.default,
 }
 
 export function getTokenColors(isColor = false) {
@@ -118,7 +110,16 @@ export function getsemanticTokenColors(isColor = false) {
   if (isColor) {
     return {
       semanticHighlighting: true,
-      semanticTokenColors,
+      semanticTokenColors: {
+        namespace: semanticTokenColor.namespace,
+        function: semanticTokenColor.function,
+        property: semanticTokenColor.property,
+        interface: semanticTokenColor.interface,
+        type: semanticTokenColor.type,
+        typeParameter: semanticTokenColor.typeParameter,
+        class: semanticTokenColor.class,
+        enum: semanticTokenColor.enum,
+      },
     }
   }
 }
