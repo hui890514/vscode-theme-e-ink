@@ -247,13 +247,10 @@
         "comment.line.percentage",
         "comment.line.character",
         "comment.block",
-        "comment.block.documentation",
-        "invalid",
-        "invalid.illegal",
-        "invalid.deprecated"
+        "comment.block.documentation"
       ],
       "settings": {
-        "foreground": "#B56959",
+        "foreground": "#2AA198",
         "fontStyle": ""
       }
     },
@@ -285,7 +282,7 @@
         "string.other"
       ],
       "settings": {
-        "foreground": "#ff9800",
+        "foreground": "#1CB01C",
         "fontStyle": ""
       }
     },
@@ -309,6 +306,17 @@
     },
     {
       "scope": [
+        "invalid",
+        "invalid.illegal",
+        "invalid.deprecated"
+      ],
+      "settings": {
+        "foreground": "#B56959",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
         "keyword",
         "keyword.control",
         "keyword.operator",
@@ -327,7 +335,7 @@
         "variable.language"
       ],
       "settings": {
-        "foreground": "#3f51b5",
+        "foreground": "#3F51B5",
         "fontStyle": ""
       }
     },
@@ -353,8 +361,8 @@
     "namespace": "#795548",
     "function": "#AF00DB",
     "property": "#795548",
-    "interface": "#2AA198",
-    "type": "#2AA198",
+    "interface": "#FF9800",
+    "type": "#FF9800",
     "typeParameter": "#795548",
     "class": "#795548",
     "enum": "#795548"
