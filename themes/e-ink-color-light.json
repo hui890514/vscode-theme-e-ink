@@ -379,13 +379,37 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "namespace": "#795548",
-    "function": "#AF00DB",
-    "property": "#795548",
-    "interface": "#FF9800",
-    "type": "#FF9800",
-    "typeParameter": "#795548",
-    "class": "#795548",
-    "enum": "#795548"
+    "namespace": {
+      "foreground": "#795548",
+      "fontStyle": ""
+    },
+    "function": {
+      "foreground": "#AF00DB",
+      "fontStyle": ""
+    },
+    "property": {
+      "foreground": "#795548",
+      "fontStyle": ""
+    },
+    "interface": {
+      "foreground": "#FF9800",
+      "fontStyle": ""
+    },
+    "type": {
+      "foreground": "#FF9800",
+      "fontStyle": ""
+    },
+    "typeParameter": {
+      "foreground": "#795548",
+      "fontStyle": ""
+    },
+    "class": {
+      "foreground": "#795548",
+      "fontStyle": ""
+    },
+    "enum": {
+      "foreground": "#795548",
+      "fontStyle": ""
+    }
   }
 }

@@ -377,5 +377,39 @@
       }
     }
   ],
-  "semanticHighlighting": false
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "namespace": {
+      "foreground": "#000000",
+      "fontStyle": ""
+    },
+    "function": {
+      "foreground": "#000000",
+      "fontStyle": "bold"
+    },
+    "property": {
+      "foreground": "#000000",
+      "fontStyle": ""
+    },
+    "interface": {
+      "foreground": "#000000",
+      "fontStyle": "bold"
+    },
+    "type": {
+      "foreground": "#000000",
+      "fontStyle": "bold"
+    },
+    "typeParameter": {
+      "foreground": "#000000",
+      "fontStyle": ""
+    },
+    "class": {
+      "foreground": "#000000",
+      "fontStyle": ""
+    },
+    "enum": {
+      "foreground": "#000000",
+      "fontStyle": ""
+    }
+  }
 }

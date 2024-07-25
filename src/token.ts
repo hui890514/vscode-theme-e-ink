@@ -107,19 +107,18 @@ export function getTokenColors(index: Index) {
 }
 
 export function getSemanticTokenColors(index: Index) {
-  return index
-    ? {
-        semanticHighlighting: true,
-        semanticTokenColors: {
-          namespace: semanticTokenColor.namespace,
-          function: semanticTokenColor.function,
-          property: semanticTokenColor.property,
-          interface: semanticTokenColor.interface,
-          type: semanticTokenColor.type,
-          typeParameter: semanticTokenColor.typeParameter,
-          class: semanticTokenColor.class,
-          enum: semanticTokenColor.enum,
-        },
-      }
-    : { semanticHighlighting: false }
+  const h = (colors: readonly [string, string, string]) => colors[index]
+  return {
+    semanticHighlighting: true,
+    semanticTokenColors: {
+      namespace: formatColor(h(semanticTokenColor.namespace)),
+      function: formatColor(h(semanticTokenColor.function)),
+      property: formatColor(h(semanticTokenColor.property)),
+      interface: formatColor(h(semanticTokenColor.interface)),
+      type: formatColor(h(semanticTokenColor.type)),
+      typeParameter: formatColor(h(semanticTokenColor.typeParameter)),
+      class: formatColor(h(semanticTokenColor.class)),
+      enum: formatColor(h(semanticTokenColor.enum)),
+    },
+  }
 }
