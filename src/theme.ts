@@ -1,7 +1,8 @@
 import { theme } from './color'
+import type { Index } from './index'
 
-export function getThemeColors(isColor = false) {
-  const h = (colors: readonly [string, string]) => isColor ? colors[1] : colors[0]
+export function getThemeColors(index: Index) {
+  const h = (colors: readonly [string, string, string]) => colors[index]
 
   return {
     // https://code.visualstudio.com/api/references/theme-color
@@ -31,7 +32,7 @@ export function getThemeColors(isColor = false) {
     'textBlockQuote.border': h(theme.border),
     'textCodeBlock.background': h(theme.background),
     'textLink.activeForeground': h(theme.foreground),
-    'textLink.foreground': h([theme.foreground2[0], theme.foreground3[1]]),
+    'textLink.foreground': h([theme.foreground2[0], theme.foreground3[1], theme.foreground3[1]]),
     'textPreformat.foreground': h(theme.background),
     'textPreformat.background': h(theme.background2),
     'textSeparator.foreground': h(theme.foreground),
@@ -66,7 +67,7 @@ export function getThemeColors(isColor = false) {
     'input.background': h(theme.background),
     'input.border': h(theme.border),
     'input.foreground': h(theme.foreground),
-    'input.placeholderForeground': h([theme.foreground2[0], theme.foreground[1]]),
+    'input.placeholderForeground': h([theme.foreground2[0], theme.foreground[1], theme.foreground[1]]),
     'inputOption.activeBackground': h(theme.background),
     'inputOption.activeBorder': h(theme.border),
     'inputOption.activeForeground': h(theme.foreground),
@@ -83,9 +84,9 @@ export function getThemeColors(isColor = false) {
 
     // Scrollbar control
     'scrollbar.shadow': h(theme.shadow),
-    'scrollbarSlider.activeBackground': h([theme.background4[0], theme.background3[1]]),
-    'scrollbarSlider.background': h([theme.background2[0], theme.background2[1]]),
-    'scrollbarSlider.hoverBackground': h([theme.background4[0], theme.background3[1]]),
+    'scrollbarSlider.activeBackground': h([theme.background4[0], theme.background3[1], theme.background3[1]]),
+    'scrollbarSlider.background': h([theme.background2[0], theme.background2[1], theme.background2[1]]),
+    'scrollbarSlider.hoverBackground': h([theme.background4[0], theme.background3[1], theme.background3[1]]),
 
     // Badge
     'badge.foreground': h(theme.foreground),
@@ -274,7 +275,7 @@ export function getThemeColors(isColor = false) {
     // 'editor.rangeHighlightBorder': h(theme.background),
     'editor.symbolHighlightBackground': h(theme.background2),
     'editor.symbolHighlightBorder': h(theme.border),
-    'editorWhitespace.foreground': h([theme.foreground3[0], theme.foreground[1]]),
+    'editorWhitespace.foreground': h([theme.foreground3[0], theme.foreground[1], theme.foreground[1]]),
     'editorIndentGuide.background': h(theme.background),
     // 'editorIndentGuide.background1': h(theme.background),
     // 'editorIndentGuide.background2': h(theme.background),
@@ -297,7 +298,7 @@ export function getThemeColors(isColor = false) {
     // 'editorInlayHint.parameterBackground': h(theme.background),
     'editorRuler.foreground': h(theme.foreground),
     'editor.linkedEditingBackground': h(theme.background2),
-    'editorCodeLens.foreground': h([theme.foreground[0], theme.foreground3[1]]),
+    'editorCodeLens.foreground': h([theme.foreground[0], theme.foreground3[1], theme.foreground3[1]]),
     'editorLightBulb.foreground': h(theme.foreground),
     'editorLightBulbAutoFix.foreground': h(theme.foreground),
     // 'editorLightBulbAi.foreground': h(theme.background),

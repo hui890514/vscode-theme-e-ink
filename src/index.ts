@@ -3,23 +3,29 @@ import process from 'node:process'
 import { getThemeColors } from './theme'
 import { getSemanticTokenColors, getTokenColors } from './token'
 
-function getTheme(isColor = false) {
+export type Index = 0 | 1 | 2
+function getTheme(index: Index) {
   return {
-    name: isColor ? 'E-Ink Color' : 'E-Ink',
-    base: 'hc-light',
+    name: ['E-Ink', 'E-Ink Color Light', 'E-Ink Color Dark'][index],
+    base: ['hc-light', 'hc-light', 'hc-black'][index],
     $schema: 'vscode://schemas/color-theme',
-    colors: getThemeColors(isColor),
-    tokenColors: getTokenColors(isColor),
-    ...getSemanticTokenColors(isColor),
+    colors: getThemeColors(index),
+    tokenColors: getTokenColors(index),
+    ...getSemanticTokenColors(index),
   }
 }
 
 fs.writeFile(
   './themes/e-ink.json',
-  `${JSON.stringify(getTheme(), null, 2)}\n`,
+  `${JSON.stringify(getTheme(0), null, 2)}\n`,
 ).catch(() => process.exit(1))
 
 fs.writeFile(
-  './themes/e-ink-color.json',
-  `${JSON.stringify(getTheme(true), null, 2)}\n`,
+  './themes/e-ink-color-light.json',
+  `${JSON.stringify(getTheme(1), null, 2)}\n`,
+).catch(() => process.exit(1))
+
+fs.writeFile(
+  './themes/e-ink-color-dark.json',
+  `${JSON.stringify(getTheme(2), null, 2)}\n`,
 ).catch(() => process.exit(1))

@@ -25,9 +25,14 @@
         "path": "./themes/e-ink.json"
       },
       {
-        "label": "E-Ink Color",
+        "label": "E-Ink Color Light",
         "uiTheme": "hc-light",
-        "path": "./themes/e-ink-color.json"
+        "path": "./themes/e-ink-color-light.json"
+      },
+      {
+        "label": "E-Ink Color Dark",
+        "uiTheme": "hc-black",
+        "path": "./themes/e-ink-color-dark.json"
       }
     ]
   },

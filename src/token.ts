@@ -1,7 +1,8 @@
 import { formatColor, semanticTokenColor, tokenColor } from './color'
+import type { Index } from '.'
 
 interface TokenObject {
-  [index: string]: readonly [string, string]
+  [index: string]: readonly [string, string, string]
 }
 
 const basic: TokenObject = {
@@ -94,20 +95,19 @@ const YAML: TokenObject = {
   'entity.name.tag.yaml': tokenColor.default,
 }
 
-export function getTokenColors(isColor = false) {
+export function getTokenColors(index: Index) {
   const tokenColors: { [index: string]: string[] } = {}
   const rules = { ...basic, ...JSON, ...YAML }
-  const i = isColor ? 1 : 0
   for (const rule of Object.keys(rules))
-    (tokenColors[rules[rule][i]] ??= []).push(rule)
+    (tokenColors[rules[rule][index]] ??= []).push(rule)
   return Object.keys(tokenColors).map(key => ({
     scope: tokenColors[key],
     settings: formatColor(key),
   }))
 }
 
-export function getSemanticTokenColors(isColor = false) {
-  return isColor
+export function getSemanticTokenColors(index: Index) {
+  return index
     ? {
         semanticHighlighting: true,
         semanticTokenColors: {

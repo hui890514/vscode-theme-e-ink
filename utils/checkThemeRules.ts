@@ -50,9 +50,10 @@ async function getRules() {
 
 function diff(localRules: LocalRules, rules: Rules) {
   let str = `import { theme } from './color'
+import type { Index } from './index'
 
-export function getThemeColors(isColor = false) {
-  const h = (colors: readonly [string, string]) => isColor ? colors[1] : colors[0]
+export function getThemeColors(index: Index) {
+  const h = (colors: readonly [string, string, string]) => colors[index]
 
   return {
     // https://code.visualstudio.com/api/references/theme-color`
