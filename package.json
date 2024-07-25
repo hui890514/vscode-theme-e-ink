@@ -36,7 +36,8 @@
     "build": "esno src/index.ts",
     "release": "bumpp --all && vsce publish --no-dependencies",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "check": "esno utils/checkThemeRules.ts"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.3",

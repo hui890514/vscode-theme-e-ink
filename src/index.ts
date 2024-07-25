@@ -1,6 +1,18 @@
 import { promises as fs } from 'node:fs'
 import process from 'node:process'
-import getTheme from './theme'
+import { getThemeColors } from './theme'
+import { getSemanticTokenColors, getTokenColors } from './token'
+
+function getTheme(isColor = false) {
+  return {
+    name: isColor ? 'E-Ink Color' : 'E-Ink',
+    base: 'hc-light',
+    $schema: 'vscode://schemas/color-theme',
+    colors: getThemeColors(isColor),
+    tokenColors: getTokenColors(isColor),
+    ...getSemanticTokenColors(isColor),
+  }
+}
 
 fs.writeFile(
   './themes/e-ink.json',

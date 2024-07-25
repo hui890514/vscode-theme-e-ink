@@ -106,7 +106,7 @@ export function getTokenColors(isColor = false) {
   }))
 }
 
-export function getsemanticTokenColors(isColor = false) {
+export function getSemanticTokenColors(isColor = false) {
   return isColor
     ? {
         semanticHighlighting: true,

@@ -5,4 +5,5 @@
 node_modules/**
 pnpm-lock.yaml
 src/**
+utils/** 
 tsconfig.json
