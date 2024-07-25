@@ -41,11 +41,14 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.3",
+    "@types/jsdom": "^21.1.7",
     "@types/node": "^20.8.9",
+    "axios": "^1.7.2",
     "bumpp": "^9.2.0",
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",
     "esno": "^0.17.0",
+    "jsdom": "^24.1.1",
     "lint-staged": "^15.2.2",
     "simple-git-hooks": "^2.11.0"
   },
