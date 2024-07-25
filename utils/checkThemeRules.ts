@@ -55,22 +55,21 @@ export function getThemeColors(isColor = false) {
   const h = (colors: readonly [string, string]) => isColor ? colors[1] : colors[0]
 
   return {
-    // https://code.visualstudio.com/api/references/theme-color
-    `
+    // https://code.visualstudio.com/api/references/theme-color`
   for (const key of Object.keys(rules)) {
     if (rules[key].length === 0) {
       continue
     }
     else {
       let s = `
-      // ${key}
-      `
+
+    // ${key}`
       for (const rule of rules[key]) {
         s += localRules[rule]
-          ? `'${rule}': ${localRules[rule]},
-          `
-          : `// '${rule}': h(theme.background),
-          `
+          ? `
+    '${rule}': ${localRules[rule]},`
+          : `
+    // '${rule}': h(theme.background),`
       }
       str += s
     }
@@ -78,7 +77,7 @@ export function getThemeColors(isColor = false) {
   str += `
   }
 }
-  `
+`
   writeFileSync(path, str)
 }
 

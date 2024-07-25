@@ -901,6 +901,5 @@ export function getThemeColors(isColor = false) {
     // 'scm.historyItemDeletionsForeground': h(theme.background),
     // 'scm.historyItemStatisticsBorder': h(theme.background),
     // 'scm.historyItemSelectedStatisticsBorder': h(theme.background),
-
   }
 }
