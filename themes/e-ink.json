@@ -173,7 +173,7 @@
     "editorIndentGuide.activeBackground": "#000000",
     "editorRuler.foreground": "#000000",
     "editor.linkedEditingBackground": "#DDDDDD",
-    "editorCodeLens.foreground": "#000000",
+    "editorCodeLens.foreground": "#B4B4B3",
     "editorLightBulb.foreground": "#000000",
     "editorLightBulbAutoFix.foreground": "#000000",
     "editorBracketMatch.background": "#FFFFFF",
