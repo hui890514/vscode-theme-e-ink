@@ -8,3 +8,4 @@ src/**
 utils/** 
 tsconfig.json
 screenshots/**
+eslint.config.js
