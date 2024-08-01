@@ -81,7 +81,7 @@ export const theme = <const>{
   separator: [color.black, lightColor.brown, darkColor.white],
   stroke: [color.black, lightColor.brown, darkColor.darkBlue],
   highlight: [color.lightGray, lightColor.lightBrown, darkColor.white],
-  highlight2: [color.darkGray, lightColor.brown, darkColor.black],
+  highlight2: [color.darkGray, lightColor.brown, darkColor.white],
   error: [color.red, lightColor.red, darkColor.red],
   warning: [color.yellow, lightColor.yellow, darkColor.yellow],
 
