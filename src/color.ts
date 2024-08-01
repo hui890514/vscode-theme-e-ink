@@ -91,7 +91,7 @@ export const theme = <const>{
   bracket4: [color.black, lightColor.green, darkColor.green],
   bracket5: [color.black, lightColor.yellow, darkColor.white],
   bracket6: [color.black, lightColor.brown, darkColor.yellow],
-  unexpectedBracket: [color.black, lightColor.black, darkColor.black],
+  unexpectedBracket: [color.black, lightColor.black, darkColor.red],
 }
 
 export const tokenColor = <const>{
