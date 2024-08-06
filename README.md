@@ -6,10 +6,6 @@ This is a VSCode theme designed specifically for E-Ink displays.
 
 ## Screenshots
 
-### E-Ink
-
-![e-ink](./screenshots/e-ink.png)
-
 ### E-Ink Color Dark
 
 ![e-ink-color-dark](./screenshots/e-ink-color-dark.png)
@@ -17,6 +13,10 @@ This is a VSCode theme designed specifically for E-Ink displays.
 ### E-Ink Color Light
 
 ![e-ink-color-light](./screenshots/e-ink-color-light.png)
+
+### E-Ink
+
+![e-ink](./screenshots/e-ink.png)
 
 I test the E-Ink theme on the DASUNG Paperlike HD 13.3-inch display with Text Mode and Fast+++, and the E-Ink Color theme on the Bigme B251 25.3-inch display with Web Mode.
 
