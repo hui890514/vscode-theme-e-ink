@@ -5,7 +5,7 @@
   "colors": {
     "contrastActiveBorder": "#BD93F9",
     "contrastBorder": "#6272A4",
-    "focusBorder": "#6272A4",
+    "focusBorder": "#BD93F9",
     "foreground": "#F8F8F2",
     "disabledForeground": "#6272A4",
     "widget.border": "#6272A4",

@@ -75,6 +75,7 @@ export const theme = <const>{
   diffInsertedBorder: [color.black, lightColor.green, darkColor.transparentLightGreen],
   diffRemovedborder: [color.black, lightColor.red, darkColor.transparentRed],
   selectionBorder: [color.black, lightColor.brown, darkColor.purple],
+  focusBorder: [color.black, lightColor.brown, darkColor.purple],
 
   shadow: [color.white, lightColor.white, darkColor.black],
   outline: [color.black, lightColor.brown, darkColor.purple],

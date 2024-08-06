@@ -12,7 +12,7 @@ export function getThemeColors(index: Index) {
     'contrastBorder': h(theme.border),
 
     // Base colors
-    'focusBorder': h(theme.border),
+    'focusBorder': h(theme.focusBorder),
     'foreground': h(theme.foreground),
     'disabledForeground': h(theme.disabledForeground),
     'widget.border': h(theme.border),
