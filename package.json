@@ -3,7 +3,7 @@
   "name": "vscode-theme-e-ink",
   "displayName": "E-Ink Theme",
   "type": "module",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "E-ink theme for VSCode",
   "license": "MIT",
   "repository": {
