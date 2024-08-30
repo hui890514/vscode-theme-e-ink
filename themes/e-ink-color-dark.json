@@ -364,7 +364,8 @@
         "support.constant",
         "support.variable",
         "support.other",
-        "variable.language"
+        "variable.language",
+        "meta.link.inline.markdown"
       ],
       "settings": {
         "foreground": "#FF79C6",

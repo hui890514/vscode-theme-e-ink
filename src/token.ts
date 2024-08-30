@@ -95,9 +95,13 @@ const YAML: TokenObject = {
   'entity.name.tag.yaml': tokenColor.default,
 }
 
+const markdown: TokenObject = {
+  'meta.link.inline.markdown': tokenColor.keyword,
+}
+
 export function getTokenColors(index: Index) {
   const tokenColors: { [index: string]: string[] } = {}
-  const rules = { ...basic, ...JSON, ...YAML }
+  const rules = { ...basic, ...JSON, ...YAML, ...markdown }
   for (const rule of Object.keys(rules))
     (tokenColors[rules[rule][index]] ??= []).push(rule)
   return Object.keys(tokenColors).map(key => ({
