@@ -117,8 +117,8 @@ export const semanticTokenColor = <const>{
   interface: [`${color.black} bold`, lightColor.orange, darkColor.green],
   type: [`${color.black} bold`, lightColor.orange, darkColor.green],
   typeParameter: [color.black, lightColor.brown, darkColor.green],
+  enum: [color.black, lightColor.brown, darkColor.green],
   class: [color.black, lightColor.brown, darkColor.white],
-  enum: [color.black, lightColor.brown, darkColor.white],
 }
 
 export const specificTokenColor = <const>{
