@@ -113,7 +113,7 @@ export const tokenColor = <const>{
 export const semanticTokenColor = <const>{
   namespace: [color.black, lightColor.brown, darkColor.white],
   function: [`${color.black} bold`, lightColor.purple, darkColor.blue],
-  property: [color.black, lightColor.brown, darkColor.white],
+  property: [color.black, lightColor.brown, darkColor.orange],
   interface: [`${color.black} bold`, lightColor.orange, darkColor.green],
   type: [`${color.black} bold`, lightColor.orange, darkColor.green],
   typeParameter: [color.black, lightColor.brown, darkColor.green],
