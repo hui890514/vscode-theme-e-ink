@@ -1,4 +1,4 @@
-import { formatColor, semanticTokenColor, tokenColor } from './color'
+import { formatColor, otherTokenColor, semanticTokenColor, tokenColor } from './color'
 import type { Index } from '.'
 
 interface TokenObject {
@@ -87,6 +87,12 @@ const basic: TokenObject = {
   'variable.other': tokenColor.variable,
 }
 
+const HTML: TokenObject = {
+  'entity.name.tag.html': otherTokenColor.htmlTag,
+  'text.html.derivative': tokenColor.string,
+  'entity.other.attribute-name.html': semanticTokenColor.type,
+}
+
 const JSON: TokenObject = {
   'support.type.property-name.json': tokenColor.default,
 }
@@ -101,7 +107,7 @@ const markdown: TokenObject = {
 
 export function getTokenColors(index: Index) {
   const tokenColors: { [index: string]: string[] } = {}
-  const rules = { ...basic, ...JSON, ...YAML, ...markdown }
+  const rules = { ...basic, ...HTML, ...JSON, ...YAML, ...markdown }
   for (const rule of Object.keys(rules))
     (tokenColors[rules[rule][index]] ??= []).push(rule)
   return Object.keys(tokenColors).map(key => ({

@@ -311,7 +311,8 @@
         "string.unquoted",
         "string.interpolated",
         "string.regexp",
-        "string.other"
+        "string.other",
+        "text.html.derivative"
       ],
       "settings": {
         "foreground": "#EAC394",
@@ -365,6 +366,7 @@
         "support.variable",
         "support.other",
         "variable.language",
+        "entity.name.tag.html",
         "meta.link.inline.markdown"
       ],
       "settings": {
@@ -385,6 +387,15 @@
       ],
       "settings": {
         "foreground": "#F8F8F2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name.html"
+      ],
+      "settings": {
+        "foreground": "#20E3B2",
         "fontStyle": ""
       }
     }

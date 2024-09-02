@@ -311,7 +311,8 @@
         "string.unquoted",
         "string.interpolated",
         "string.regexp",
-        "string.other"
+        "string.other",
+        "text.html.derivative"
       ],
       "settings": {
         "foreground": "#1CB01C",
@@ -329,7 +330,8 @@
         "entity.other",
         "entity.other.inherited-class",
         "entity.other.attribute-name",
-        "markup.bold"
+        "markup.bold",
+        "entity.name.tag.html"
       ],
       "settings": {
         "foreground": "#AF00DB",
@@ -385,6 +387,15 @@
       ],
       "settings": {
         "foreground": "#795548",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name.html"
+      ],
+      "settings": {
+        "foreground": "#FF9800",
         "fontStyle": ""
       }
     }
