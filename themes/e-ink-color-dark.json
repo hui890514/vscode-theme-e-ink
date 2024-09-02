@@ -367,6 +367,8 @@
         "support.other",
         "variable.language",
         "entity.name.tag.html",
+        "support.type.property-name.json",
+        "entity.name.tag.yaml",
         "meta.link.inline.markdown"
       ],
       "settings": {
@@ -381,9 +383,7 @@
         "meta",
         "variable",
         "variable.parameter",
-        "variable.other",
-        "support.type.property-name.json",
-        "entity.name.tag.yaml"
+        "variable.other"
       ],
       "settings": {
         "foreground": "#F8F8F2",

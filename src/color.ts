@@ -122,7 +122,8 @@ export const semanticTokenColor = <const>{
 }
 
 export const otherTokenColor = <const>{
-  htmlTag: [`${color.black} bold`, `${lightColor.purple}`, `${darkColor.pink}`],
+  HTMLTag: [`${color.black} bold`, `${lightColor.purple}`, `${darkColor.pink}`],
+  JSONKey: [`${color.black}`, `${lightColor.brown}`, `${darkColor.pink}`],
 }
 
 export function formatColor(a: string) {

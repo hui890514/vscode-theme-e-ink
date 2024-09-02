@@ -88,17 +88,17 @@ const basic: TokenObject = {
 }
 
 const HTML: TokenObject = {
-  'entity.name.tag.html': otherTokenColor.htmlTag,
+  'entity.name.tag.html': otherTokenColor.HTMLTag,
   'text.html.derivative': tokenColor.string,
   'entity.other.attribute-name.html': semanticTokenColor.type,
 }
 
 const JSON: TokenObject = {
-  'support.type.property-name.json': tokenColor.default,
+  'support.type.property-name.json': otherTokenColor.JSONKey,
 }
 
 const YAML: TokenObject = {
-  'entity.name.tag.yaml': tokenColor.default,
+  'entity.name.tag.yaml': otherTokenColor.JSONKey,
 }
 
 const markdown: TokenObject = {
