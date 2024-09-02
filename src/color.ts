@@ -122,10 +122,10 @@ export const semanticTokenColor = <const>{
 }
 
 export const specificTokenColor = <const>{
-  HTMLTag: [`${color.black} bold`, `${lightColor.purple}`, `${darkColor.pink}`],
-  HTMLAttribute: [`${color.black} bold`, lightColor.orange, darkColor.green],
-  JSONKey: [`${color.black}`, `${lightColor.brown}`, `${darkColor.pink}`],
-  CSSKey: [`${color.black} bold`, lightColor.orange, darkColor.green],
+  htmlTag: [`${color.black} bold`, `${lightColor.purple}`, `${darkColor.pink}`],
+  htmlAttribute: [`${color.black} bold`, lightColor.orange, darkColor.green],
+  jsonKey: [`${color.black}`, `${lightColor.brown}`, `${darkColor.pink}`],
+  cssKey: [`${color.black} bold`, lightColor.orange, darkColor.green],
 }
 
 export function formatColor(a: string) {

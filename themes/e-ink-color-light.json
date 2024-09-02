@@ -332,7 +332,10 @@
         "entity.other.inherited-class",
         "entity.other.attribute-name",
         "markup.bold",
-        "entity.name.tag.html"
+        "entity.name.tag.html",
+        "entity.name.tag.script.html.vue",
+        "entity.name.tag.template.html.vue",
+        "entity.name.tag.style.html.vue"
       ],
       "settings": {
         "foreground": "#AF00DB",
@@ -371,7 +374,8 @@
         "meta.link.inline.markdown",
         "entity.other.attribute-name.pseudo-class.css",
         "entity.other.attribute-name.pseudo-element.css",
-        "entity.name.tag.css"
+        "entity.name.tag.css",
+        "entity.name.tag.wildcard.css"
       ],
       "settings": {
         "foreground": "#3F51B5",

@@ -87,36 +87,43 @@ const basic: TokenObject = {
   'variable.other': tokenColor.variable,
 }
 
-const HTML: TokenObject = {
-  'entity.name.tag.html': specificTokenColor.HTMLTag,
+const html: TokenObject = {
+  'entity.name.tag.html': specificTokenColor.htmlTag,
   'text.html.derivative': tokenColor.string,
-  'entity.other.attribute-name.html': specificTokenColor.HTMLAttribute,
+  'entity.other.attribute-name.html': specificTokenColor.htmlAttribute,
 }
 
-const JSON: TokenObject = {
-  'support.type.property-name.json': specificTokenColor.JSONKey,
+const json: TokenObject = {
+  'support.type.property-name.json': specificTokenColor.jsonKey,
 }
 
-const YAML: TokenObject = {
-  'entity.name.tag.yaml': specificTokenColor.JSONKey,
+const yaml: TokenObject = {
+  'entity.name.tag.yaml': specificTokenColor.jsonKey,
 }
 
 const markdown: TokenObject = {
   'meta.link.inline.markdown': tokenColor.keyword,
 }
 
-const CSS: TokenObject = {
+const css: TokenObject = {
   'entity.other.attribute-name.pseudo-class.css': tokenColor.keyword,
   'entity.other.attribute-name.pseudo-element.css': tokenColor.keyword,
   'entity.other.attribute-name.class.css': tokenColor.string,
   'entity.name.tag.css': tokenColor.keyword,
-  'support.type.property-name.css': specificTokenColor.CSSKey,
-  'support.type.property-name.media.css': specificTokenColor.CSSKey,
+  'support.type.property-name.css': specificTokenColor.cssKey,
+  'support.type.property-name.media.css': specificTokenColor.cssKey,
+  'entity.name.tag.wildcard.css': tokenColor.keyword,
+}
+
+const vue: TokenObject = {
+  'entity.name.tag.script.html.vue': specificTokenColor.htmlTag,
+  'entity.name.tag.template.html.vue': specificTokenColor.htmlTag,
+  'entity.name.tag.style.html.vue': specificTokenColor.htmlTag,
 }
 
 export function getTokenColors(index: Index) {
   const tokenColors: { [index: string]: string[] } = {}
-  const rules = { ...basic, ...HTML, ...JSON, ...YAML, ...markdown, ...CSS }
+  const rules = { ...basic, ...html, ...json, ...yaml, ...markdown, ...css, ...vue }
   for (const rule of Object.keys(rules))
     (tokenColors[rules[rule][index]] ??= []).push(rule)
   return Object.keys(tokenColors).map(key => ({
