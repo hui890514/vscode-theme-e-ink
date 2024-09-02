@@ -1,4 +1,4 @@
-import { formatColor, otherTokenColor, semanticTokenColor, tokenColor } from './color'
+import { formatColor, semanticTokenColor, specificTokenColor, tokenColor } from './color'
 import type { Index } from '.'
 
 interface TokenObject {
@@ -88,26 +88,35 @@ const basic: TokenObject = {
 }
 
 const HTML: TokenObject = {
-  'entity.name.tag.html': otherTokenColor.HTMLTag,
+  'entity.name.tag.html': specificTokenColor.HTMLTag,
   'text.html.derivative': tokenColor.string,
-  'entity.other.attribute-name.html': semanticTokenColor.type,
+  'entity.other.attribute-name.html': specificTokenColor.HTMLAttribute,
 }
 
 const JSON: TokenObject = {
-  'support.type.property-name.json': otherTokenColor.JSONKey,
+  'support.type.property-name.json': specificTokenColor.JSONKey,
 }
 
 const YAML: TokenObject = {
-  'entity.name.tag.yaml': otherTokenColor.JSONKey,
+  'entity.name.tag.yaml': specificTokenColor.JSONKey,
 }
 
 const markdown: TokenObject = {
   'meta.link.inline.markdown': tokenColor.keyword,
 }
 
+const CSS: TokenObject = {
+  'entity.other.attribute-name.pseudo-class.css': tokenColor.keyword,
+  'entity.other.attribute-name.pseudo-element.css': tokenColor.keyword,
+  'entity.other.attribute-name.class.css': tokenColor.string,
+  'entity.name.tag.css': tokenColor.keyword,
+  'support.type.property-name.css': specificTokenColor.CSSKey,
+  'support.type.property-name.media.css': specificTokenColor.CSSKey,
+}
+
 export function getTokenColors(index: Index) {
   const tokenColors: { [index: string]: string[] } = {}
-  const rules = { ...basic, ...HTML, ...JSON, ...YAML, ...markdown }
+  const rules = { ...basic, ...HTML, ...JSON, ...YAML, ...markdown, ...CSS }
   for (const rule of Object.keys(rules))
     (tokenColors[rules[rule][index]] ??= []).push(rule)
   return Object.keys(tokenColors).map(key => ({

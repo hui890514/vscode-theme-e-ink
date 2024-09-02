@@ -121,9 +121,11 @@ export const semanticTokenColor = <const>{
   enum: [color.black, lightColor.brown, darkColor.white],
 }
 
-export const otherTokenColor = <const>{
+export const specificTokenColor = <const>{
   HTMLTag: [`${color.black} bold`, `${lightColor.purple}`, `${darkColor.pink}`],
+  HTMLAttribute: [`${color.black} bold`, lightColor.orange, darkColor.green],
   JSONKey: [`${color.black}`, `${lightColor.brown}`, `${darkColor.pink}`],
+  CSSKey: [`${color.black} bold`, lightColor.orange, darkColor.green],
 }
 
 export function formatColor(a: string) {

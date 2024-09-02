@@ -314,7 +314,8 @@
         "string.interpolated",
         "string.regexp",
         "string.other",
-        "text.html.derivative"
+        "text.html.derivative",
+        "entity.other.attribute-name.class.css"
       ],
       "settings": {
         "foreground": "#B4B4B3",
@@ -343,7 +344,9 @@
         "entity.other.attribute-name",
         "markup.bold",
         "entity.name.tag.html",
-        "entity.other.attribute-name.html"
+        "entity.other.attribute-name.html",
+        "support.type.property-name.css",
+        "support.type.property-name.media.css"
       ],
       "settings": {
         "foreground": "#000000",
@@ -368,7 +371,10 @@
         "support.variable",
         "support.other",
         "variable.language",
-        "meta.link.inline.markdown"
+        "meta.link.inline.markdown",
+        "entity.other.attribute-name.pseudo-class.css",
+        "entity.other.attribute-name.pseudo-element.css",
+        "entity.name.tag.css"
       ],
       "settings": {
         "foreground": "#000000",

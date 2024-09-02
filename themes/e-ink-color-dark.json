@@ -312,7 +312,8 @@
         "string.interpolated",
         "string.regexp",
         "string.other",
-        "text.html.derivative"
+        "text.html.derivative",
+        "entity.other.attribute-name.class.css"
       ],
       "settings": {
         "foreground": "#EAC394",
@@ -369,7 +370,10 @@
         "entity.name.tag.html",
         "support.type.property-name.json",
         "entity.name.tag.yaml",
-        "meta.link.inline.markdown"
+        "meta.link.inline.markdown",
+        "entity.other.attribute-name.pseudo-class.css",
+        "entity.other.attribute-name.pseudo-element.css",
+        "entity.name.tag.css"
       ],
       "settings": {
         "foreground": "#FF79C6",
@@ -392,7 +396,9 @@
     },
     {
       "scope": [
-        "entity.other.attribute-name.html"
+        "entity.other.attribute-name.html",
+        "support.type.property-name.css",
+        "support.type.property-name.media.css"
       ],
       "settings": {
         "foreground": "#20E3B2",
