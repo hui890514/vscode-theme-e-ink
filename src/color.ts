@@ -3,15 +3,15 @@ enum color {
   white = '#FFFFFF',
   lightGray = '#DDDDDD',
   darkGray = '#B4B4B3',
-  red = '#b5200d',
-  yellow = '#cca300',
+  red = '#B5200D',
+  yellow = '#CCA300',
   transparent = '#F8F8F200',
 }
 
 enum lightColor {
   black = '#000000',
   white = '#FFFFFF',
-  red = '#b5200d',
+  red = '#B5200D',
   blue = '#3F51B5',
   purple = '#AF00DB',
   orange = '#FF9800',
@@ -29,7 +29,7 @@ enum darkColor {
   purple = '#BD93F9',
   pink = '#FF79C6',
   red = '#FF5555',
-  transparentRed = '#ff555550',
+  transparentRed = '#FF555550',
   yellow = '#EAC394',
   blue = '#8BE9FD',
   darkBlue = '#6272A4',

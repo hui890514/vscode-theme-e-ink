@@ -12,7 +12,7 @@
     "widget.shadow": "#FFFFFF",
     "selection.background": "#DAB0A1",
     "descriptionForeground": "#795548",
-    "errorForeground": "#b5200d",
+    "errorForeground": "#B5200D",
     "icon.foreground": "#795548",
     "sash.hoverBorder": "#795548",
     "window.activeBorder": "#795548",
@@ -74,8 +74,8 @@
     "list.inactiveSelectionIconForeground": "#795548",
     "list.inactiveFocusBackground": "#FFFFFF",
     "list.inactiveFocusOutline": "#795548",
-    "list.invalidItemForeground": "#b5200d",
-    "list.errorForeground": "#b5200d",
+    "list.invalidItemForeground": "#B5200D",
+    "list.errorForeground": "#B5200D",
     "list.warningForeground": "#CCA300",
     "listFilterWidget.background": "#FFFFFF",
     "listFilterWidget.outline": "#795548",
@@ -200,10 +200,10 @@
     "diffEditor.insertedTextBackground": "#F8F8F200",
     "diffEditor.insertedTextBorder": "#1CB01C",
     "diffEditor.removedTextBackground": "#F8F8F200",
-    "diffEditor.removedTextBorder": "#b5200d",
+    "diffEditor.removedTextBorder": "#B5200D",
     "diffEditor.border": "#795548",
     "diffEditorGutter.insertedLineBackground": "#1CB01C",
-    "diffEditorGutter.removedLineBackground": "#b5200d",
+    "diffEditorGutter.removedLineBackground": "#B5200D",
     "diffEditor.unchangedRegionBackground": "#DAB0A1",
     "diffEditor.unchangedRegionForeground": "#795548",
     "panel.background": "#FFFFFF",
@@ -345,7 +345,7 @@
         "invalid.deprecated"
       ],
       "settings": {
-        "foreground": "#b5200d",
+        "foreground": "#B5200D",
         "fontStyle": ""
       }
     },
