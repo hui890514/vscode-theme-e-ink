@@ -11,8 +11,9 @@ enum color {
 enum lightColor {
   black = '#000000',
   white = '#FFFFFF',
-  red = '#B5200D',
+  red = '#FF5555',
   blue = '#3F51B5',
+  pink = '#FF79C6',
   purple = '#AF00DB',
   orange = '#FF9800',
   lightGreen = '#2AA198',
@@ -21,6 +22,9 @@ enum lightColor {
   lightBrown = '#DAB0A1',
   yellow = '#CCA300',
   transparent = '#F8F8F200',
+  transparentGreen = '#1CB01C50',
+  transparentRed = '#FF555550',
+  gray = '#44475A',
 }
 
 enum darkColor {
@@ -50,11 +54,11 @@ export const theme = <const>{
   hightlightBackground: [color.lightGray, lightColor.lightBrown, darkColor.gray],
   selectionBackground: [color.lightGray, lightColor.lightBrown, darkColor.gray],
   dropBackground: [color.lightGray, lightColor.lightBrown, darkColor.gray],
-  diffInsertedTransparentBackground: [color.transparent, lightColor.transparent, darkColor.transparentLightGreen],
-  diffRemovedTransparentBackground: [color.transparent, lightColor.transparent, darkColor.transparentRed],
-  diffInsertedTransparentBackground2: [color.lightGray, lightColor.green, darkColor.transparentGray],
-  diffRemovedTransparentBackground2: [color.lightGray, lightColor.red, darkColor.transparentGray],
-  listSelectionBackground: [color.white, lightColor.white, darkColor.gray],
+  diffInsertedTransparentBackground: [color.transparent, lightColor.transparentGreen, darkColor.transparentLightGreen],
+  diffRemovedTransparentBackground: [color.transparent, lightColor.transparentRed, darkColor.transparentRed],
+  diffInsertedTransparentBackground2: [color.lightGray, lightColor.transparentGreen, darkColor.transparentGray],
+  diffRemovedTransparentBackground2: [color.lightGray, lightColor.transparentRed, darkColor.transparentGray],
+  listSelectionBackground: [color.white, lightColor.lightBrown, darkColor.gray],
   inactiveBackground: [color.lightGray, lightColor.lightBrown, darkColor.transparentDarkBlue],
   activeBackground: [color.darkGray, lightColor.brown, darkColor.darkBlue],
   hoverBackground: [color.darkGray, lightColor.brown, darkColor.transparentDarkBlue2],
@@ -62,18 +66,18 @@ export const theme = <const>{
 
   foreground: [color.black, lightColor.brown, darkColor.white],
   lineNumberForeground: [color.black, lightColor.brown, darkColor.darkBlue],
-  lineNumberActiveForeground: [color.darkGray, lightColor.purple, darkColor.purple],
+  lineNumberActiveForeground: [color.darkGray, lightColor.pink, darkColor.purple],
   cursorForeground: [color.black, lightColor.brown, darkColor.purple],
-  selectionForeground: [color.black, lightColor.brown, darkColor.transparent],
+  selectionForeground: [color.black, lightColor.transparent, darkColor.transparent],
   linkForeground: [color.darkGray, lightColor.blue, darkColor.purple],
   placeholderForeground: [color.darkGray, lightColor.brown, darkColor.white],
   whiteSpaceForeground: [color.white, lightColor.brown, darkColor.white],
   disabledForeground: [color.lightGray, lightColor.lightBrown, darkColor.darkBlue],
 
   border: [color.black, lightColor.brown, darkColor.darkBlue],
-  dropBorder: [color.black, lightColor.purple, darkColor.purple],
-  diffInsertedBorder: [color.black, lightColor.green, darkColor.transparentLightGreen],
-  diffRemovedborder: [color.black, lightColor.red, darkColor.transparentRed],
+  dropBorder: [color.black, lightColor.pink, darkColor.purple],
+  diffInsertedBorder: [color.black, lightColor.transparentGreen, darkColor.transparentLightGreen],
+  diffRemovedborder: [color.black, lightColor.transparentRed, darkColor.transparentRed],
   selectionBorder: [color.black, lightColor.brown, darkColor.purple],
   focusBorder: [color.black, lightColor.brown, darkColor.purple],
 
@@ -87,19 +91,19 @@ export const theme = <const>{
   warning: [color.yellow, lightColor.yellow, darkColor.yellow],
 
   bracket: [color.black, lightColor.blue, darkColor.pink],
-  bracket2: [color.black, lightColor.purple, darkColor.orange],
-  bracket3: [color.black, lightColor.orange, darkColor.blue],
-  bracket4: [color.black, lightColor.green, darkColor.green],
-  bracket5: [color.black, lightColor.yellow, darkColor.white],
-  bracket6: [color.black, lightColor.brown, darkColor.yellow],
-  unexpectedBracket: [color.black, lightColor.black, darkColor.red],
+  bracket2: [color.black, lightColor.gray, darkColor.orange],
+  bracket3: [color.black, lightColor.pink, darkColor.blue],
+  bracket4: [color.black, lightColor.yellow, darkColor.green],
+  bracket5: [color.black, lightColor.brown, darkColor.white],
+  bracket6: [color.black, lightColor.green, darkColor.yellow],
+  unexpectedBracket: [color.black, lightColor.red, darkColor.red],
 }
 
 export const tokenColor = <const>{
   default: [color.black, lightColor.brown, darkColor.white],
   variable: [color.black, lightColor.brown, darkColor.white],
   meta: [color.black, lightColor.brown, darkColor.white],
-  entity: [`${color.black} bold`, `${lightColor.purple}`, `${darkColor.blue}`],
+  entity: [`${color.black} bold`, `${lightColor.pink}`, `${darkColor.blue}`],
   keyword: [`${color.black} italic`, `${lightColor.blue}`, `${darkColor.pink}`],
   support: [`${color.black} italic`, `${lightColor.blue}`, `${darkColor.pink}`],
   storage: [`${color.black} italic`, `${lightColor.blue}`, `${darkColor.pink}`],
@@ -112,21 +116,21 @@ export const tokenColor = <const>{
 
 export const semanticTokenColor = <const>{
   namespace: [color.black, lightColor.brown, darkColor.white],
-  function: [`${color.black} bold`, lightColor.purple, darkColor.blue],
-  property: [color.black, lightColor.brown, darkColor.orange],
-  interface: [`${color.black} bold`, lightColor.orange, darkColor.green],
-  type: [`${color.black} bold`, lightColor.orange, darkColor.green],
-  typeParameter: [color.black, lightColor.brown, darkColor.green],
-  enum: [color.black, lightColor.brown, darkColor.green],
-  enumMember: [color.black, lightColor.brown, darkColor.orange],
+  function: [`${color.black} bold`, lightColor.pink, darkColor.blue],
+  property: [color.black, lightColor.gray, darkColor.orange],
+  interface: [`${color.black} bold`, lightColor.yellow, darkColor.green],
+  type: [`${color.black} bold`, lightColor.yellow, darkColor.green],
+  typeParameter: [color.black, lightColor.yellow, darkColor.green],
+  enum: [color.black, lightColor.yellow, darkColor.green],
+  enumMember: [color.black, lightColor.gray, darkColor.orange],
   class: [color.black, lightColor.brown, darkColor.white],
 }
 
 export const specificTokenColor = <const>{
-  htmlTag: [`${color.black} bold`, `${lightColor.purple}`, `${darkColor.pink}`],
-  htmlAttribute: [`${color.black} bold`, lightColor.orange, darkColor.green],
-  jsonKey: [`${color.black}`, `${lightColor.brown}`, `${darkColor.pink}`],
-  cssKey: [`${color.black} bold`, lightColor.orange, darkColor.green],
+  htmlTag: [`${color.black} bold`, `${lightColor.blue}`, `${darkColor.pink}`],
+  htmlAttribute: [`${color.black} bold`, lightColor.yellow, darkColor.green],
+  jsonKey: [`${color.black}`, `${lightColor.blue}`, `${darkColor.pink}`],
+  cssKey: [`${color.black} bold`, lightColor.yellow, darkColor.green],
 }
 
 export function formatColor(a: string) {
