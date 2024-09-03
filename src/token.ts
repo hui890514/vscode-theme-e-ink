@@ -145,6 +145,7 @@ export function getSemanticTokenColors(index: Index) {
       typeParameter: formatColor(h(semanticTokenColor.typeParameter)),
       class: formatColor(h(semanticTokenColor.class)),
       enum: formatColor(h(semanticTokenColor.enum)),
+      enumMember: formatColor(h(semanticTokenColor.enumMember)),
     },
   }
 }

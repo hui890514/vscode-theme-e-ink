@@ -443,6 +443,10 @@
     "enum": {
       "foreground": "#795548",
       "fontStyle": ""
+    },
+    "enumMember": {
+      "foreground": "#795548",
+      "fontStyle": ""
     }
   }
 }

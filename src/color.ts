@@ -118,6 +118,7 @@ export const semanticTokenColor = <const>{
   type: [`${color.black} bold`, lightColor.orange, darkColor.green],
   typeParameter: [color.black, lightColor.brown, darkColor.green],
   enum: [color.black, lightColor.brown, darkColor.green],
+  enumMember: [color.black, lightColor.brown, darkColor.orange],
   class: [color.black, lightColor.brown, darkColor.white],
 }
 
