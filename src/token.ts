@@ -102,7 +102,17 @@ const yaml: TokenObject = {
 }
 
 const markdown: TokenObject = {
-  'meta.link.inline.markdown': tokenColor.keyword,
+  'punctuation.definition.link.title.begin.markdown': tokenColor.keyword,
+  'punctuation.definition.link.title.end.markdown': tokenColor.keyword,
+  'punctuation.definition.metadata.markdown': tokenColor.keyword,
+  'punctuation.definition.bold.markdown': tokenColor.keyword,
+  'punctuation.definition.link.description.begin.markdown': tokenColor.keyword,
+  'punctuation.definition.link.description.end.markdown': tokenColor.keyword,
+  'punctuation.definition.raw.markdown': tokenColor.keyword,
+  'markup.inline.raw.string.markdown': tokenColor.keyword,
+  'markup.bold.markdown': tokenColor.keyword,
+  'string.other.link.title.markdown': tokenColor.keyword,
+  'string.other.link.description.markdown': tokenColor.keyword,
 }
 
 const css: TokenObject = {
