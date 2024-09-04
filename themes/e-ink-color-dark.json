@@ -331,7 +331,8 @@
         "entity.other",
         "entity.other.inherited-class",
         "entity.other.attribute-name",
-        "markup.bold"
+        "markup.bold",
+        "fenced_code.block.language.markdown"
       ],
       "settings": {
         "foreground": "#8BE9FD",
@@ -377,6 +378,7 @@
         "punctuation.definition.link.description.begin.markdown",
         "punctuation.definition.link.description.end.markdown",
         "punctuation.definition.raw.markdown",
+        "punctuation.definition.markdown",
         "markup.inline.raw.string.markdown",
         "markup.bold.markdown",
         "string.other.link.title.markdown",

@@ -109,10 +109,12 @@ const markdown: TokenObject = {
   'punctuation.definition.link.description.begin.markdown': tokenColor.keyword,
   'punctuation.definition.link.description.end.markdown': tokenColor.keyword,
   'punctuation.definition.raw.markdown': tokenColor.keyword,
+  'punctuation.definition.markdown': tokenColor.keyword,
   'markup.inline.raw.string.markdown': tokenColor.keyword,
   'markup.bold.markdown': tokenColor.keyword,
   'string.other.link.title.markdown': tokenColor.keyword,
   'string.other.link.description.markdown': tokenColor.keyword,
+  'fenced_code.block.language.markdown': tokenColor.entity,
 }
 
 const css: TokenObject = {
