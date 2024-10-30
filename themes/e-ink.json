@@ -22,7 +22,7 @@
     "textCodeBlock.background": "#FFFFFF",
     "textLink.activeForeground": "#000000",
     "textLink.foreground": "#B4B4B3",
-    "textPreformat.foreground": "#FFFFFF",
+    "textPreformat.foreground": "#000000",
     "textPreformat.background": "#DDDDDD",
     "textSeparator.foreground": "#000000",
     "toolbar.hoverBackground": "#FFFFFF",

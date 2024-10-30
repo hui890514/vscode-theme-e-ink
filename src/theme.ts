@@ -33,7 +33,7 @@ export function getThemeColors(index: Index) {
     'textCodeBlock.background': h(theme.background),
     'textLink.activeForeground': h(theme.foreground),
     'textLink.foreground': h(theme.linkForeground),
-    'textPreformat.foreground': h(theme.background),
+    'textPreformat.foreground': h(theme.foreground),
     'textPreformat.background': h(theme.background2),
     'textSeparator.foreground': h(theme.foreground),
 
