@@ -41,6 +41,10 @@ export function getThemeColors(index: Index) {
     'toolbar.hoverBackground': h(theme.background),
     'toolbar.hoverOutline': h(theme.outline),
     'toolbar.activeBackground': h(theme.activeBackground),
+    // 'editorActionList.background': h(theme.background),
+    // 'editorActionList.foreground': h(theme.background),
+    // 'editorActionList.focusForeground': h(theme.background),
+    // 'editorActionList.focusBackground': h(theme.background),
 
     // Button control
     'button.background': h(theme.background),
@@ -56,6 +60,13 @@ export function getThemeColors(index: Index) {
     'checkbox.border': h(theme.border),
     'checkbox.selectBackground': h(theme.activeBackground),
     'checkbox.selectBorder': h(theme.selectionBorder),
+    // 'radio.activeForeground': h(theme.background),
+    // 'radio.activeBackground': h(theme.background),
+    // 'radio.activeBorder': h(theme.background),
+    // 'radio.inactiveForeground': h(theme.background),
+    // 'radio.inactiveBackground': h(theme.background),
+    // 'radio.inactiveBorder': h(theme.background),
+    // 'radio.inactiveHoverBackground': h(theme.background),
 
     // Dropdown control
     'dropdown.background': h(theme.background),
@@ -146,6 +157,10 @@ export function getThemeColors(index: Index) {
     'activityBarTop.dropBorder': h(theme.dropBorder),
     'activityBarTop.background': h(theme.background),
     'activityBarTop.activeBackground': h(theme.background),
+    // 'activityWarningBadge.foreground': h(theme.background),
+    // 'activityWarningBadge.background': h(theme.background),
+    // 'activityErrorBadge.foreground': h(theme.background),
+    // 'activityErrorBadge.background': h(theme.background),
 
     // Profiles
     'profileBadge.background': h(theme.background),
@@ -207,7 +222,6 @@ export function getThemeColors(index: Index) {
     'tab.unfocusedActiveBorder': h(theme.border),
     'tab.activeBorderTop': h(theme.border),
     'tab.unfocusedActiveBorderTop': h(theme.border),
-    // 'tab.dragAndDropBorder': h(theme.background),
     'tab.lastPinnedBorder': h(theme.border),
     'tab.inactiveBackground': h(theme.background),
     'tab.unfocusedInactiveBackground': h(theme.background),
@@ -241,6 +255,7 @@ export function getThemeColors(index: Index) {
     // 'editorMultiCursor.secondary.foreground': h(theme.background),
     // 'editorMultiCursor.secondary.background': h(theme.background),
     // 'editor.placeholder.foreground': h(theme.background),
+    // 'editor.compositionBorder': h(theme.background),
     'editor.selectionBackground': h(theme.selectionBackground),
     'editor.selectionForeground': h(theme.selectionForeground),
     'editor.inactiveSelectionBackground': h(theme.selectionBackground),
@@ -402,7 +417,7 @@ export function getThemeColors(index: Index) {
     // 'chat.slashCommandForeground': h(theme.background),
     // 'chat.avatarBackground': h(theme.background),
     // 'chat.avatarForeground': h(theme.background),
-    // 'chat.requestBackground': h(theme.background),
+    // 'chat.editedFileForeground': h(theme.background),
 
     // Inline Chat colors
     // 'inlineChat.background': h(theme.background),
@@ -680,6 +695,8 @@ export function getThemeColors(index: Index) {
     // 'terminalStickyScroll.border': h(theme.background),
     // 'terminalStickyScrollHover.background': h(theme.background),
     // 'terminal.initialHintForeground': h(theme.background),
+    // 'terminalOverviewRuler.border': h(theme.background),
+    // 'terminalCommandGuide.foreground': h(theme.background),
 
     // Debug colors
     'debugToolBar.background': h(theme.background),
@@ -754,6 +771,21 @@ export function getThemeColors(index: Index) {
     // 'gitDecoration.ignoredResourceForeground': h(theme.background),
     // 'gitDecoration.conflictingResourceForeground': h(theme.background),
     // 'gitDecoration.submoduleResourceForeground': h(theme.background),
+
+    // Source Control Graph colors
+    // 'scmGraph.historyItemHoverLabelForeground': h(theme.background),
+    // 'scmGraph.foreground1': h(theme.background),
+    // 'scmGraph.foreground2': h(theme.background),
+    // 'scmGraph.foreground3': h(theme.background),
+    // 'scmGraph.foreground4': h(theme.background),
+    // 'scmGraph.foreground5': h(theme.background),
+    // 'scmGraph.historyItemHoverAdditionsForeground': h(theme.background),
+    // 'scmGraph.historyItemHoverDeletionsForeground': h(theme.background),
+    // 'scmGraph.historyItemRefColor': h(theme.background),
+    // 'scmGraph.historyItemRemoteRefColor': h(theme.background),
+    // 'scmGraph.historyItemBaseRefColor': h(theme.background),
+    // 'scmGraph.historyItemHoverDefaultLabelForeground': h(theme.background),
+    // 'scmGraph.historyItemHoverDefaultLabelBackground': h(theme.background),
 
     // Settings Editor colors
     // 'settings.headerForeground': h(theme.background),
@@ -896,11 +928,5 @@ export function getThemeColors(index: Index) {
 
     // Simple Find Widget
     // 'simpleFindWidget.sashBorder': h(theme.background),
-
-    // SCM
-    // 'scm.historyItemAdditionsForeground': h(theme.background),
-    // 'scm.historyItemDeletionsForeground': h(theme.background),
-    // 'scm.historyItemStatisticsBorder': h(theme.background),
-    // 'scm.historyItemSelectedStatisticsBorder': h(theme.background),
   }
 }
