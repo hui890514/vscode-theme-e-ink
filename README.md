@@ -18,7 +18,7 @@ This is a VSCode theme designed specifically for E-Ink displays.
 
 ![e-ink](./screenshots/e-ink.png)
 
-I test the E-Ink theme on the DASUNG Paperlike HD 13.3-inch display with Text Mode and Fast+++, and the E-Ink Color theme on the Bigme B251 25.3-inch display with Web Mode.
+I test the E-Ink theme on the DASUNG Paperlike HD 13.3-inch display with Text Mode and Fast+++, and the E-Ink Color theme on the Bigme B251 25.3-inch display with Video Mode.
 
 ## Thanks
 
