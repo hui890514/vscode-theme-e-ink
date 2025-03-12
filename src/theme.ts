@@ -178,6 +178,7 @@ export function getThemeColors(index: Index) {
     'sideBarSectionHeader.border': h(theme.border),
     // 'sideBarActivityBarTop.border': h(theme.background),
     // 'sideBarTitle.background': h(theme.background),
+    // 'sideBarTitle.border': h(theme.background),
     // 'sideBarStickyScroll.background': h(theme.background),
     // 'sideBarStickyScroll.border': h(theme.background),
     // 'sideBarStickyScroll.shadow': h(theme.background),
@@ -191,12 +192,14 @@ export function getThemeColors(index: Index) {
     // 'minimap.selectionOccurrenceHighlight': h(theme.background),
     // 'minimap.foregroundOpacity': h(theme.background),
     // 'minimap.infoHighlight': h(theme.background),
+    // 'minimap.chatEditHighlight': h(theme.background),
     // 'minimapSlider.background': h(theme.background),
     // 'minimapSlider.hoverBackground': h(theme.background),
     // 'minimapSlider.activeBackground': h(theme.background),
     // 'minimapGutter.addedBackground': h(theme.background),
     // 'minimapGutter.modifiedBackground': h(theme.background),
     // 'minimapGutter.deletedBackground': h(theme.background),
+    // 'editorMinimap.inlineChatInserted': h(theme.background),
 
     // Editor Groups & Tabs
     'editorGroup.border': h(theme.border),
@@ -386,6 +389,26 @@ export function getThemeColors(index: Index) {
     // 'editorCommentsWidget.rangeBackground': h(theme.background),
     // 'editorCommentsWidget.rangeActiveBackground': h(theme.background),
     // 'editorCommentsWidget.replyInputBackground': h(theme.background),
+    // 'inlineEdit.gutterIndicator.primaryForeground': h(theme.background),
+    // 'inlineEdit.gutterIndicator.primaryBackground': h(theme.background),
+    // 'inlineEdit.gutterIndicator.secondaryForeground': h(theme.background),
+    // 'inlineEdit.gutterIndicator.secondaryBackground': h(theme.background),
+    // 'inlineEdit.gutterIndicator.successfulForeground': h(theme.background),
+    // 'inlineEdit.gutterIndicator.successfulBackground': h(theme.background),
+    // 'inlineEdit.gutterIndicator.background': h(theme.background),
+    // 'inlineEdit.indicator.foreground': h(theme.background),
+    // 'inlineEdit.indicator.background': h(theme.background),
+    // 'inlineEdit.indicator.border': h(theme.background),
+    // 'inlineEdit.originalBackground': h(theme.background),
+    // 'inlineEdit.modifiedBackground': h(theme.background),
+    // 'inlineEdit.originalChangedLineBackground': h(theme.background),
+    // 'inlineEdit.originalChangedTextBackground': h(theme.background),
+    // 'inlineEdit.modifiedChangedLineBackground': h(theme.background),
+    // 'inlineEdit.modifiedChangedTextBackground': h(theme.background),
+    // 'inlineEdit.originalBorder': h(theme.background),
+    // 'inlineEdit.modifiedBorder': h(theme.background),
+    // 'inlineEdit.tabWillAcceptBorder': h(theme.background),
+    // 'inlineEdit.wordReplacementView.background': h(theme.background),
 
     // Diff editor colors
     'diffEditor.insertedTextBackground': h(theme.diffInsertedTransparentBackground),
@@ -522,6 +545,9 @@ export function getThemeColors(index: Index) {
     'panelTitle.activeBorder': h(theme.selectionBorder),
     'panelTitle.activeForeground': h(theme.foreground),
     'panelTitle.inactiveForeground': h(theme.foreground),
+    // 'panelTitle.border': h(theme.background),
+    // 'panelTitleBadge.background': h(theme.background),
+    // 'panelTitleBadge.foreground': h(theme.background),
     'panelInput.border': h(theme.border),
     // 'panelSection.border': h(theme.background),
     // 'panelSection.dropBackground': h(theme.background),
@@ -697,6 +723,8 @@ export function getThemeColors(index: Index) {
     // 'terminal.initialHintForeground': h(theme.background),
     // 'terminalOverviewRuler.border': h(theme.background),
     // 'terminalCommandGuide.foreground': h(theme.background),
+    // 'terminalSymbolIcon.aliasForeground': h(theme.background),
+    // 'terminalSymbolIcon.flagForeground': h(theme.background),
 
     // Debug colors
     'debugToolBar.background': h(theme.background),
@@ -734,7 +762,6 @@ export function getThemeColors(index: Index) {
     // 'testing.iconSkipped.retired': h(theme.background),
     // 'testing.peekBorder': h(theme.background),
     // 'testing.peekHeaderBackground': h(theme.background),
-    // 'testing.message.error.decorationForeground': h(theme.background),
     // 'testing.message.error.lineBackground': h(theme.background),
     // 'testing.message.info.decorationForeground': h(theme.background),
     // 'testing.message.info.lineBackground': h(theme.background),
@@ -749,6 +776,9 @@ export function getThemeColors(index: Index) {
     // 'testing.uncoveredGutterBackground': h(theme.background),
     // 'testing.coverCountBadgeBackground': h(theme.background),
     // 'testing.coverCountBadgeForeground': h(theme.background),
+    // 'testing.message.error.badgeBackground': h(theme.background),
+    // 'testing.message.error.badgeBorder': h(theme.background),
+    // 'testing.message.error.badgeForeground': h(theme.background),
 
     // Welcome page colors
     // 'welcomePage.background': h(theme.background),
@@ -771,6 +801,7 @@ export function getThemeColors(index: Index) {
     // 'gitDecoration.ignoredResourceForeground': h(theme.background),
     // 'gitDecoration.conflictingResourceForeground': h(theme.background),
     // 'gitDecoration.submoduleResourceForeground': h(theme.background),
+    // 'git.blame.editorDecorationForeground': h(theme.background),
 
     // Source Control Graph colors
     // 'scmGraph.historyItemHoverLabelForeground': h(theme.background),
@@ -915,8 +946,11 @@ export function getThemeColors(index: Index) {
     // 'charts.orange': h(theme.background),
     // 'charts.green': h(theme.background),
     // 'charts.purple': h(theme.background),
+    // 'chart.line': h(theme.background),
+    // 'chart.axis': h(theme.background),
+    // 'chart.guide': h(theme.background),
 
-    // Ports Colors
+    // Ports colors
     // 'ports.iconRunningProcessForeground': h(theme.background),
 
     // Comments View colors
@@ -926,7 +960,16 @@ export function getThemeColors(index: Index) {
     // Action Bar colors
     'actionBar.toggledBackground': h(theme.background2),
 
-    // Simple Find Widget
+    // Simple Find Widget colors
     // 'simpleFindWidget.sashBorder': h(theme.background),
+
+    // Gauge colors
+    // 'gauge.background': h(theme.background),
+    // 'gauge.foreground': h(theme.background),
+    // 'gauge.border': h(theme.background),
+    // 'gauge.warningBackground': h(theme.background),
+    // 'gauge.warningForeground': h(theme.background),
+    // 'gauge.errorBackground': h(theme.background),
+    // 'gauge.errorForeground': h(theme.background),
   }
 }
