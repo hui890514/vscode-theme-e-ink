@@ -103,13 +103,13 @@ export const tokenColor = <const>{
   default: [color.black, lightColor.brown, darkColor.white],
   variable: [color.black, lightColor.brown, darkColor.white],
   meta: [color.black, lightColor.brown, darkColor.white],
-  entity: [`${color.black} bold`, `${lightColor.pink}`, `${darkColor.blue}`],
-  keyword: [`${color.black} italic`, `${lightColor.blue}`, `${darkColor.pink}`],
-  support: [`${color.black} italic`, `${lightColor.blue}`, `${darkColor.pink}`],
-  storage: [`${color.black} italic`, `${lightColor.blue}`, `${darkColor.pink}`],
-  constantLanguage: [`${color.darkGray} italic bold`, `${lightColor.green}`, `${darkColor.yellow}`],
-  constant: [`${color.darkGray} bold`, `${lightColor.green}`, `${darkColor.yellow}`],
-  string: [`${color.darkGray} bold`, `${lightColor.green}`, `${darkColor.yellow}`],
+  entity: [`${color.black} bold`, lightColor.pink, darkColor.blue],
+  keyword: [`${color.black} italic`, lightColor.blue, darkColor.pink],
+  support: [`${color.black} italic`, lightColor.blue, darkColor.pink],
+  storage: [`${color.black} italic`, lightColor.blue, darkColor.pink],
+  constantLanguage: [`${color.darkGray} italic bold`, lightColor.green, darkColor.yellow],
+  constant: [`${color.darkGray} bold`, lightColor.green, darkColor.yellow],
+  string: [`${color.darkGray} bold`, lightColor.green, darkColor.yellow],
   comment: [color.lightGray, lightColor.lightGreen, darkColor.lightGreen],
   invalid: [color.lightGray, lightColor.red, darkColor.red],
 }
@@ -127,9 +127,9 @@ export const semanticTokenColor = <const>{
 }
 
 export const specificTokenColor = <const>{
-  htmlTag: [`${color.black} bold`, `${lightColor.blue}`, `${darkColor.pink}`],
+  htmlTag: [`${color.black} bold`, lightColor.blue, darkColor.pink],
   htmlAttribute: [`${color.black} bold`, lightColor.yellow, darkColor.green],
-  jsonKey: [`${color.black}`, `${lightColor.blue}`, `${darkColor.pink}`],
+  jsonKey: [color.black, lightColor.blue, darkColor.pink],
   cssKey: [`${color.black} bold`, lightColor.yellow, darkColor.green],
 }
 
