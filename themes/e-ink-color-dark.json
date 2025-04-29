@@ -369,6 +369,7 @@
         "support.other",
         "variable.language",
         "entity.name.tag.html",
+        "punctuation.separator.key-value.html",
         "support.type.property-name.json",
         "entity.name.tag.yaml",
         "punctuation.definition.link.title.begin.markdown",
@@ -389,7 +390,17 @@
         "entity.name.tag.wildcard.css",
         "entity.name.tag.script.html.vue",
         "entity.name.tag.template.html.vue",
-        "entity.name.tag.style.html.vue"
+        "entity.name.tag.style.html.vue",
+        "punctuation.attribute-shorthand.bind.html.vue",
+        "punctuation.attribute-shorthand.event.html.vue",
+        "punctuation.definition.string.begin.html.vue",
+        "punctuation.definition.string.end.html.vue",
+        "punctuation.separator.key-value.ts",
+        "punctuation.definition.template-expression.begin.ts",
+        "punctuation.definition.template-expression.end.ts",
+        "punctuation.separator.key-value.js",
+        "punctuation.definition.template-expression.begin.js",
+        "punctuation.definition.template-expression.end.js"
       ],
       "settings": {
         "foreground": "#FF79C6",
@@ -414,7 +425,9 @@
       "scope": [
         "entity.other.attribute-name.html",
         "support.type.property-name.css",
-        "support.type.property-name.media.css"
+        "support.type.property-name.media.css",
+        "support.type.builtin.ts",
+        "support.type.primitive.ts"
       ],
       "settings": {
         "foreground": "#20E3B2",

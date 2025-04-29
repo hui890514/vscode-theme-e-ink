@@ -350,7 +350,9 @@
         "support.type.property-name.media.css",
         "entity.name.tag.script.html.vue",
         "entity.name.tag.template.html.vue",
-        "entity.name.tag.style.html.vue"
+        "entity.name.tag.style.html.vue",
+        "support.type.builtin.ts",
+        "support.type.primitive.ts"
       ],
       "settings": {
         "foreground": "#000000",
@@ -375,6 +377,7 @@
         "support.variable",
         "support.other",
         "variable.language",
+        "punctuation.separator.key-value.html",
         "punctuation.definition.link.title.begin.markdown",
         "punctuation.definition.link.title.end.markdown",
         "punctuation.definition.metadata.markdown",
@@ -390,7 +393,17 @@
         "entity.other.attribute-name.pseudo-class.css",
         "entity.other.attribute-name.pseudo-element.css",
         "entity.name.tag.css",
-        "entity.name.tag.wildcard.css"
+        "entity.name.tag.wildcard.css",
+        "punctuation.attribute-shorthand.bind.html.vue",
+        "punctuation.attribute-shorthand.event.html.vue",
+        "punctuation.definition.string.begin.html.vue",
+        "punctuation.definition.string.end.html.vue",
+        "punctuation.separator.key-value.ts",
+        "punctuation.definition.template-expression.begin.ts",
+        "punctuation.definition.template-expression.end.ts",
+        "punctuation.separator.key-value.js",
+        "punctuation.definition.template-expression.begin.js",
+        "punctuation.definition.template-expression.end.js"
       ],
       "settings": {
         "foreground": "#000000",

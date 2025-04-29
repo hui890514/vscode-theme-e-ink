@@ -89,8 +89,43 @@ const basic: TokenObject = {
 
 const html: TokenObject = {
   'entity.name.tag.html': specificTokenColor.htmlTag,
-  'text.html.derivative': tokenColor.string,
   'entity.other.attribute-name.html': specificTokenColor.htmlAttribute,
+  'text.html.derivative': tokenColor.string,
+  'punctuation.separator.key-value.html': tokenColor.keyword,
+}
+
+const css: TokenObject = {
+  'entity.other.attribute-name.pseudo-class.css': tokenColor.keyword,
+  'entity.other.attribute-name.pseudo-element.css': tokenColor.keyword,
+  'entity.other.attribute-name.class.css': tokenColor.string,
+  'entity.name.tag.css': tokenColor.keyword,
+  'entity.name.tag.wildcard.css': tokenColor.keyword,
+  'support.type.property-name.css': specificTokenColor.cssKey,
+  'support.type.property-name.media.css': specificTokenColor.cssKey,
+}
+
+const js: TokenObject = {
+  'punctuation.separator.key-value.js': tokenColor.keyword,
+  'punctuation.definition.template-expression.begin.js': tokenColor.keyword,
+  'punctuation.definition.template-expression.end.js': tokenColor.keyword,
+}
+
+const ts: TokenObject = {
+  'punctuation.separator.key-value.ts': tokenColor.keyword,
+  'punctuation.definition.template-expression.begin.ts': tokenColor.keyword,
+  'punctuation.definition.template-expression.end.ts': tokenColor.keyword,
+  'support.type.builtin.ts': semanticTokenColor.type,
+  'support.type.primitive.ts': semanticTokenColor.type,
+}
+
+const vue: TokenObject = {
+  'entity.name.tag.script.html.vue': specificTokenColor.htmlTag,
+  'entity.name.tag.template.html.vue': specificTokenColor.htmlTag,
+  'entity.name.tag.style.html.vue': specificTokenColor.htmlTag,
+  'punctuation.attribute-shorthand.bind.html.vue': tokenColor.keyword,
+  'punctuation.attribute-shorthand.event.html.vue': tokenColor.keyword,
+  'punctuation.definition.string.begin.html.vue': tokenColor.keyword,
+  'punctuation.definition.string.end.html.vue': tokenColor.keyword,
 }
 
 const json: TokenObject = {
@@ -101,7 +136,7 @@ const yaml: TokenObject = {
   'entity.name.tag.yaml': specificTokenColor.jsonKey,
 }
 
-const markdown: TokenObject = {
+const md: TokenObject = {
   'punctuation.definition.link.title.begin.markdown': tokenColor.keyword,
   'punctuation.definition.link.title.end.markdown': tokenColor.keyword,
   'punctuation.definition.metadata.markdown': tokenColor.keyword,
@@ -117,25 +152,9 @@ const markdown: TokenObject = {
   'fenced_code.block.language.markdown': tokenColor.entity,
 }
 
-const css: TokenObject = {
-  'entity.other.attribute-name.pseudo-class.css': tokenColor.keyword,
-  'entity.other.attribute-name.pseudo-element.css': tokenColor.keyword,
-  'entity.other.attribute-name.class.css': tokenColor.string,
-  'entity.name.tag.css': tokenColor.keyword,
-  'support.type.property-name.css': specificTokenColor.cssKey,
-  'support.type.property-name.media.css': specificTokenColor.cssKey,
-  'entity.name.tag.wildcard.css': tokenColor.keyword,
-}
-
-const vue: TokenObject = {
-  'entity.name.tag.script.html.vue': specificTokenColor.htmlTag,
-  'entity.name.tag.template.html.vue': specificTokenColor.htmlTag,
-  'entity.name.tag.style.html.vue': specificTokenColor.htmlTag,
-}
-
 export function getTokenColors(index: Index) {
   const tokenColors: { [index: string]: string[] } = {}
-  const rules = { ...basic, ...html, ...json, ...yaml, ...markdown, ...css, ...vue }
+  const rules = { ...basic, ...html, ...json, ...yaml, ...md, ...css, ...vue, ...ts, ...js }
   for (const rule of Object.keys(rules))
     (tokenColors[rules[rule][index]] ??= []).push(rule)
   return Object.keys(tokenColors).map(key => ({

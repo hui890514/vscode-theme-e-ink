@@ -5,6 +5,7 @@
     <button @click="increment">Click Me</button>
     <p v-if="count > 0">Count: {{ count }}</p>
     <p v-else>No clicks yet</p>
+    <p np="np">np</p>
 
     <!-- Loops -->
     <ul>
