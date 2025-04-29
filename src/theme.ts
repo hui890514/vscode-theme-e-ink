@@ -384,6 +384,8 @@ export function getThemeColors(index: Index) {
     // 'editorGutter.commentGlyphForeground': h(theme.background),
     // 'editorGutter.commentUnresolvedGlyphForeground': h(theme.background),
     // 'editorGutter.foldingControlForeground': h(theme.background),
+    // 'editorGutter.itemGlyphForeground': h(theme.background),
+    // 'editorGutter.itemBackground': h(theme.background),
     // 'editorCommentsWidget.resolvedBorder': h(theme.background),
     // 'editorCommentsWidget.unresolvedBorder': h(theme.background),
     // 'editorCommentsWidget.rangeBackground': h(theme.background),
@@ -396,9 +398,6 @@ export function getThemeColors(index: Index) {
     // 'inlineEdit.gutterIndicator.successfulForeground': h(theme.background),
     // 'inlineEdit.gutterIndicator.successfulBackground': h(theme.background),
     // 'inlineEdit.gutterIndicator.background': h(theme.background),
-    // 'inlineEdit.indicator.foreground': h(theme.background),
-    // 'inlineEdit.indicator.background': h(theme.background),
-    // 'inlineEdit.indicator.border': h(theme.background),
     // 'inlineEdit.originalBackground': h(theme.background),
     // 'inlineEdit.modifiedBackground': h(theme.background),
     // 'inlineEdit.originalChangedLineBackground': h(theme.background),
@@ -407,8 +406,6 @@ export function getThemeColors(index: Index) {
     // 'inlineEdit.modifiedChangedTextBackground': h(theme.background),
     // 'inlineEdit.originalBorder': h(theme.background),
     // 'inlineEdit.modifiedBorder': h(theme.background),
-    // 'inlineEdit.tabWillAcceptBorder': h(theme.background),
-    // 'inlineEdit.wordReplacementView.background': h(theme.background),
 
     // Diff editor colors
     'diffEditor.insertedTextBackground': h(theme.diffInsertedTransparentBackground),
@@ -659,6 +656,7 @@ export function getThemeColors(index: Index) {
     // 'extensionIcon.verifiedForeground': h(theme.background),
     // 'extensionIcon.preReleaseForeground': h(theme.background),
     // 'extensionIcon.sponsorForeground': h(theme.background),
+    // 'extensionIcon.privateForeground': h(theme.background),
 
     // Quick picker colors
     // 'pickerGroup.border': h(theme.background),
@@ -725,6 +723,13 @@ export function getThemeColors(index: Index) {
     // 'terminalCommandGuide.foreground': h(theme.background),
     // 'terminalSymbolIcon.aliasForeground': h(theme.background),
     // 'terminalSymbolIcon.flagForeground': h(theme.background),
+    // 'terminalSymbolIcon.optionForeground': h(theme.background),
+    // 'terminalSymbolIcon.optionValueForeground': h(theme.background),
+    // 'terminalSymbolIcon.methodForeground': h(theme.background),
+    // 'terminalSymbolIcon.argumentForeground': h(theme.background),
+    // 'terminalSymbolIcon.inlineSuggestionForeground': h(theme.background),
+    // 'terminalSymbolIcon.fileForeground': h(theme.background),
+    // 'terminalSymbolIcon.folderForeground': h(theme.background),
 
     // Debug colors
     'debugToolBar.background': h(theme.background),
