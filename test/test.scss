@@ -1,0 +1,72 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$padding: 1rem;
+
+// Mixins
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Functions
+@function rem($px) {
+  @return $px / 16 * 1rem;
+}
+
+// Placeholders
+%text-style {
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+}
+
+// Nesting & Selectors
+body {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: $padding;
+
+  h1, h2 {
+    @extend %text-style;
+    font-size: rem(24);
+    margin-bottom: rem(10);
+  }
+
+  a {
+    color: lighten($primary-color, 20%);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // Class with mixin
+  .button {
+    @include center-content;
+    padding: rem(12) rem(24);
+    background-color: darken($secondary-color, 10%);
+    border-radius: 4px;
+
+    &--primary {
+      background-color: $primary-color;
+    }
+
+    &--disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  > i {
+    cursor: pointer;
+  }
+}
+
+// Media query
+@media (max-width: 768px) {
+  body {
+    padding: rem(8);
+  }
+}
