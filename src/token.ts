@@ -145,11 +145,21 @@ const md: TokenObject = {
   'punctuation.definition.link.description.end.markdown': tokenColor.keyword,
   'punctuation.definition.raw.markdown': tokenColor.keyword,
   'punctuation.definition.markdown': tokenColor.keyword,
-  'markup.inline.raw.string.markdown': tokenColor.keyword,
-  'markup.bold.markdown': tokenColor.keyword,
-  'string.other.link.title.markdown': tokenColor.keyword,
-  'string.other.link.description.markdown': tokenColor.keyword,
+  'punctuation.definition.heading.markdown': tokenColor.keyword,
+  'punctuation.definition.strikethrough.markdown': tokenColor.keyword,
+  'punctuation.definition.italic.markdown': tokenColor.keyword,
+  'punctuation.definition.quote.begin.markdown': tokenColor.keyword,
+  'punctuation.definition.list.begin.markdown': tokenColor.keyword,
+  'punctuation.definition.table.markdown': tokenColor.keyword,
+  'punctuation.separator.table.markdown': tokenColor.keyword,
+  'markup.inline.raw.string.markdown': tokenColor.entity,
+  'markup.bold.markdown': tokenColor.entity,
+  'markup.italic.markdown': tokenColor.entity,
+  'markup.strikethrough.markdown': tokenColor.entity,
+  'string.other.link.title.markdown': tokenColor.entity,
+  'string.other.link.description.markdown': tokenColor.entity,
   'fenced_code.block.language.markdown': tokenColor.entity,
+
 }
 
 export function getTokenColors(index: Index) {
