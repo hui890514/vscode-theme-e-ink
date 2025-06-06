@@ -274,7 +274,7 @@ export function getThemeColors(index: Index) {
     'editor.wordHighlightTextBorder': h(theme.selectionBorder),
     // 'editor.findMatchBackground': h(theme.background),
     // 'editor.findMatchForeground': h(theme.background),
-    'editor.findMatchHighlightForeground': h(theme.foreground),
+    // 'editor.findMatchHighlightForeground': h(theme.foreground),
     // 'editor.findMatchHighlightBackground': h(theme.background),
     'editor.findRangeHighlightBackground': h(theme.background),
     'editor.findMatchBorder': h(theme.selectionBorder),

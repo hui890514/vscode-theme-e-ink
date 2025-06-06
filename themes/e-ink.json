@@ -165,7 +165,6 @@
     "editor.wordHighlightBorder": "#000000",
     "editor.wordHighlightStrongBorder": "#000000",
     "editor.wordHighlightTextBorder": "#000000",
-    "editor.findMatchHighlightForeground": "#000000",
     "editor.findRangeHighlightBackground": "#FFFFFF",
     "editor.findMatchBorder": "#000000",
     "editor.findRangeHighlightBorder": "#000000",
