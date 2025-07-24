@@ -274,7 +274,7 @@ export function getThemeColors(index: Index) {
     'editor.wordHighlightTextBorder': h(theme.selectionBorder),
     // 'editor.findMatchBackground': h(theme.background),
     // 'editor.findMatchForeground': h(theme.background),
-    // 'editor.findMatchHighlightForeground': h(theme.foreground),
+    // 'editor.findMatchHighlightForeground': h(theme.background),
     // 'editor.findMatchHighlightBackground': h(theme.background),
     'editor.findRangeHighlightBackground': h(theme.background),
     'editor.findMatchBorder': h(theme.selectionBorder),
@@ -448,8 +448,11 @@ export function getThemeColors(index: Index) {
     // 'chat.avatarBackground': h(theme.background),
     // 'chat.avatarForeground': h(theme.background),
     // 'chat.editedFileForeground': h(theme.background),
-    // 'prompt.frontMatter.background': h(theme.background),
-    // 'prompt.frontMatter.inactiveBackground': h(theme.background),
+    // 'chat.linesAddedForeground': h(theme.background),
+    // 'chat.linesRemovedForeground': h(theme.background),
+    // 'chat.requestCodeBorder': h(theme.background),
+    // 'chat.requestBubbleBackground': h(theme.background),
+    // 'chat.requestBubbleHoverBackground': h(theme.background),
 
     // Inline Chat colors
     // 'inlineChat.background': h(theme.background),
@@ -492,6 +495,7 @@ export function getThemeColors(index: Index) {
     // 'editorStickyScroll.background': h(theme.background),
     // 'editorStickyScroll.border': h(theme.background),
     // 'editorStickyScroll.shadow': h(theme.background),
+    // 'editorStickyScrollGutter.background': h(theme.background),
     // 'editorStickyScrollHover.background': h(theme.background),
     // 'debugExceptionWidget.background': h(theme.background),
     // 'debugExceptionWidget.border': h(theme.background),
@@ -519,6 +523,7 @@ export function getThemeColors(index: Index) {
     // 'peekViewTitleDescription.foreground': h(theme.background),
     // 'peekViewTitleLabel.foreground': h(theme.background),
     // 'peekViewEditorStickyScroll.background': h(theme.background),
+    // 'peekViewEditorStickyScrollGutter.background': h(theme.background),
 
     // Merge conflicts colors
     // 'merge.currentHeaderBackground': h(theme.background),
@@ -742,6 +747,8 @@ export function getThemeColors(index: Index) {
     // 'terminalSymbolIcon.inlineSuggestionForeground': h(theme.background),
     // 'terminalSymbolIcon.fileForeground': h(theme.background),
     // 'terminalSymbolIcon.folderForeground': h(theme.background),
+    // 'terminalSymbolIcon.symbolicLinkFileForeground': h(theme.background),
+    // 'terminalSymbolIcon.symbolicLinkFolderForeground': h(theme.background),
 
     // Debug colors
     'debugToolBar.background': h(theme.background),
