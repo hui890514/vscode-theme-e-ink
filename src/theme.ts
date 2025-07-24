@@ -722,7 +722,7 @@ export function getThemeColors(index: Index) {
     'terminal.findMatchBorder': h(theme.selectionBorder),
     'terminal.findMatchHighlightBackground': h(theme.background),
     'terminal.findMatchHighlightBorder': h(theme.selectionBorder),
-    'terminal.hoverHighlightBackground': h(theme.background),
+    // 'terminal.hoverHighlightBackground': h(theme.background),
     'terminalCursor.background': h(theme.background),
     'terminalCursor.foreground': h(theme.cursorForeground),
     // 'terminal.dropBackground': h(theme.background),

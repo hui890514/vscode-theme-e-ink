@@ -246,7 +246,6 @@
     "terminal.findMatchBorder": "#BD93F9",
     "terminal.findMatchHighlightBackground": "#141523",
     "terminal.findMatchHighlightBorder": "#BD93F9",
-    "terminal.hoverHighlightBackground": "#141523",
     "terminalCursor.background": "#141523",
     "terminalCursor.foreground": "#BD93F9",
     "terminal.tab.activeBorder": "#BD93F9",
