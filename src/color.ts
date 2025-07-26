@@ -63,6 +63,7 @@ export const theme = <const>{
   activeBackground: [color.darkGray, lightColor.brown, darkColor.darkBlue],
   hoverBackground: [color.darkGray, lightColor.brown, darkColor.transparentDarkBlue2],
   hoverBackground2: [color.lightGray, lightColor.lightBrown, darkColor.gray],
+  transparentBackground: [color.transparent, lightColor.transparent, darkColor.transparent],
 
   foreground: [color.black, lightColor.brown, darkColor.white],
   lineNumberForeground: [color.black, lightColor.brown, darkColor.darkBlue],

@@ -177,7 +177,7 @@
     "editorIndentGuide.background": "#141523",
     "editorIndentGuide.activeBackground": "#6272A4",
     "editorRuler.foreground": "#F8F8F2",
-    "editor.linkedEditingBackground": "#44475A",
+    "editor.linkedEditingBackground": "#F8F8F200",
     "editorCodeLens.foreground": "#BD93F9",
     "editorLightBulb.foreground": "#F8F8F2",
     "editorLightBulbAutoFix.foreground": "#F8F8F2",

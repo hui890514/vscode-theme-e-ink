@@ -317,7 +317,7 @@ export function getThemeColors(index: Index) {
     // 'editorInlayHint.parameterForeground': h(theme.background),
     // 'editorInlayHint.parameterBackground': h(theme.background),
     'editorRuler.foreground': h(theme.foreground),
-    'editor.linkedEditingBackground': h(theme.background2),
+    'editor.linkedEditingBackground': h(theme.transparentBackground),
     'editorCodeLens.foreground': h(theme.linkForeground),
     'editorLightBulb.foreground': h(theme.foreground),
     'editorLightBulbAutoFix.foreground': h(theme.foreground),
